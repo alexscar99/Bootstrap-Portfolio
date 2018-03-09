@@ -10,3 +10,15 @@ body {
   height: 100%;
   background-image: url(../imgs/white_wall_hash.png);
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  background: black;
+  box-shadow: inset 0px 0px 90px 10px #930d0f;
+  color: white;
+  box-sizing: border-box;
+}
