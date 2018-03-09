@@ -11,14 +11,27 @@ body {
   background-image: url(../imgs/white_wall_hash.png);
 }
 
-a {
+/* a {
   color: white;
   text-decoration: none;
-}
+} */
 
 .navbar {
   background: black;
   box-shadow: inset 0px 0px 90px 10px #930d0f;
-  color: white;
   box-sizing: border-box;
+  height: 85px;
+}
+
+.navbar-header .navbar-brand {
+  color: white;
+  font-size: 42px;
+  letter-spacing: 1.5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
 }
