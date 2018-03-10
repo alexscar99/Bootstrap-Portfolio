@@ -24,6 +24,11 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  font-size: 18px;
+  margin-top: 14px;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -34,7 +39,8 @@ p {
 
 .navbar,
 .navbar-default,
-#footer {
+#footer,
+.portfolio-banner {
   background: black;
   box-shadow: inset 0px 0px 90px 10px #930d0f;
   box-sizing: border-box;
@@ -69,7 +75,8 @@ p {
   border-bottom: 2px solid white;
 }
 
-#about-me {
+#about-me,
+#portfolio {
   border: 2px solid black;
   border-radius: 30px;
   box-shadow: 3px 3px 15px 8px #930d0f;
@@ -82,6 +89,22 @@ p {
   border: 3px solid;
   margin: 10px;
   border-radius: 10px;
+}
+
+.portfolio-project {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  margin: 30px 150px;
+}
+
+.portfolio-banner {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  color: white;
+  height: 46px;
 }
 
 #footer {

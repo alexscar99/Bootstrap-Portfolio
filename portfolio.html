@@ -14,73 +14,110 @@
 
 <body>
   <div>
-    <header id="header">
 
-      <h1>
-        <a href="index.html">Alex Scarlett</a>
-      </h1>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <h1>
+              <a class="navbar-brand" href="index.html">Alex Scarlett</a>
+            </h1>
+          </div>
 
-      <nav>
-        <a href="index.html">About</a>
-        <a href="#">Portfolio</a>
-        <a href="contact.html">Contact</a>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="header-link" href="index.html">
+                  <span>About</span>
+                </a>
+              </li>
+              <li>
+                <a class="header-link" href="#">
+                  <span>Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a class="header-link" href="contact.html">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
     </header>
 
-    <div id="portfolio">
+    <div class="container">
 
-      <h2>Portfolio Projects</h2>
+      <section id="portfolio">
 
-      <div id="projects-table">
+        <h2>Portfolio Projects</h2>
 
-        <div class="portfolio-project">
-          <img src="./assets/images/placeholder-img1.jpeg" alt="Portfolio Project Placeholder 1">
+        <div class="row">
 
-          <section class="portfolio-banner">
-            <h3>Hangman</h3>
-          </section>
+          <div class="col-md-6">
 
+            <div class="portfolio-project">
+              <img src="./assets/imgs/placeholder-img1.jpeg" alt="Portfolio Project Placeholder 1">
+
+              <section class="portfolio-banner">
+                <h3>Hangman</h3>
+              </section>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="portfolio-project">
+              <img src="./assets/imgs/placeholder-img2.jpeg" alt="Portfolio Project Placeholder 2">
+
+              <section class="portfolio-banner">
+                <h3>RPG Game</h3>
+              </section>
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio-project">
-          <img src="./assets/images/placeholder-img2.jpeg" alt="Portfolio Project Placeholder 2">
+        <div class="row">
 
-          <section class="portfolio-banner">
-            <h3>RPG Game</h3>
-          </section>
+          <div class="col-md-6">
 
+            <div class="portfolio-project">
+              <img src="./assets/imgs/placeholder-img3.jpeg" alt="Portfolio Project Placeholder 3">
+
+              <section class="portfolio-banner">
+                <h3>Rutgers Info Widget</h3>
+              </section>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="portfolio-project">
+              <img src="./assets/imgs/placeholder-img4.jpeg" alt="Portfolio Project Placeholder 4">
+
+              <section class="portfolio-banner">
+                <h3>Rock Paper Scissors</h3>
+              </section>
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio-project">
-          <img src="./assets/images/placeholder-img3.jpeg" alt="Portfolio Project Placeholder 3">
+        <div class="row">
 
-          <section class="portfolio-banner">
-            <h3>Rutgers Info Widget</h3>
-          </section>
+          <div class="col-md-6">
 
+            <div class="portfolio-project">
+              <img src="./assets/imgs/placeholder-img5.jpeg" alt="Portfolio Project Placeholder 5">
+
+              <section class="portfolio-banner">
+                <h3>Trivia Game</h3>
+              </section>
+            </div>
+          </div>
         </div>
-
-        <div class="portfolio-project">
-          <img src="./assets/images/placeholder-img4.jpeg" alt="Portfolio Project Placeholder 4">
-
-          <section class="portfolio-banner">
-            <h3>Rock Paper Scissors</h3>
-          </section>
-
-        </div>
-
-        <div class="portfolio-project">
-          <img src="./assets/images/placeholder-img5.jpeg" alt="Portfolio Project Placeholder 5">
-
-          <section class="portfolio-banner">
-            <h3>Trivia Game</h3>
-          </section>
-
-        </div>
-
-      </div>
     </div>
+    </section>
 
     <footer id="footer">
 
