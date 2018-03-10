@@ -7,19 +7,29 @@ html,
 body {
   height: 100%;
   background-image: url(../imgs/white_wall_hash.png);
+  font-size: 16px;
 }
 
 h1 {
   margin-top: 15px;
+}
+
+h1,
+h2 {
   font-weight: bold;
 }
 
-a {
-  color: white;
+h2 {
+  margin: 20px 0;
+  font-size: 30px;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+p {
+  line-height: 25px;
 }
 
 .navbar,
@@ -39,36 +49,37 @@ a:hover {
 
 .navbar-default .navbar-nav .header-link {
   color: white;
-  margin: 15px 30px 0 0;
+  margin: 10px 30px 0 0;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: bold;
 }
 
 .navbar-default .navbar-nav > li > .header-link:hover {
   color: white;
+  outline: none;
 }
 
 .navbar-default .navbar-nav > li > .header-link:visited {
   color: white;
 }
 
-.header-link {
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: bold;
-  outline: none;
-}
-
-.header-link:hover {
-  color: white;
-}
-
-.header-link:visited {
-  color: white;
-}
-
-.header-link > span:hover,
-.header-link > span:focus,
-.header-link > span:visited {
-  outline: none;
+.header-link > span:hover {
   border-bottom: 2px solid white;
-  color: white;
+}
+
+#about-me {
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: 3px 3px 15px 8px #930d0f;
+  padding: 50px;
+  margin: 30px auto 50px auto;
+  /* width: 80%; */
+}
+
+#about-me img {
+  height: 200px;
+  border: 3px solid;
+  margin: 10px;
+  border-radius: 10px;
 }
