@@ -115,3 +115,50 @@ p {
   padding: 20px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .nav > li {
+    margin-right: -30px;
+  }
+
+  #about-me img {
+    margin: 0 auto 30px;
+    display: block;
+  }
+
+  #portfolio {
+    margin: 30px 40px 50px 40px;
+  }
+
+  .portfolio-project {
+    margin: 30px 160px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 5px;
+    font-size: 25px;
+  }
+
+  .nav > li {
+    margin-right: -100px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #about-me,
+  #portfolio {
+    margin: 30px 20px 50px 20px;
+  }
+
+  #about-me img {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-project {
+    margin: 30px 2px;
+  }
+}
