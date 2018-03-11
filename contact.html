@@ -14,61 +14,113 @@
 
 <body>
   <div>
-    <header id="header">
 
-      <h1>
-        <a href="index.html">Alex Scarlett</a>
-      </h1>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <h1>
+              <a class="navbar-brand" href="index.html">Alex Scarlett</a>
+            </h1>
+          </div>
 
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="#">Contact</a>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="header-link" href="index.html">
+                  <span>About</span>
+                </a>
+              </li>
+              <li>
+                <a class="header-link" href="#">
+                  <span>Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a class="header-link" href="contact.html">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
     </header>
 
     <div>
-      <section id="contact-form">
 
-        <h2>Contact Me!</h2>
+      <div class="row">
 
-        <form action="mailto:alex.scarlett91@gmail.com" method="post" enctype="text/plain">
+        <div class="col-md-8">
 
-          <label>Name</label>
-          <input type="text" name="name" placeholder="Your Name">
+          <section id="contact-form">
 
-          <label>Email</label>
-          <input type="text" name="email" placeholder="Your Email">
+            <h2>Contact Me!</h2>
 
-          <label>Message</label>
-          <textarea type="text" name="message" placeholder="Your Message"></textarea> </textarea>
+            <form action="mailto:alex.scarlett91@gmail.com" method="post" enctype="text/plain">
 
-          <input type="submit" value="Submit">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your Name">
 
-        </form>
-      </section>
+              <label>Email</label>
+              <input type="text" name="email" placeholder="Your Email">
 
-      <section id="social-links">
-        <h2>Connect With Me</h2>
+              <label>Message</label>
+              <textarea type="text" name="message" placeholder="Your Message"></textarea> </textarea>
 
-        <a href="https://www.github.com/alexscar99" target="_blank">
-          <img src="./assets/images/Github.png" alt="GitHub Logo">
-        </a>
+              <input type="submit" value="Submit">
 
-        <a href="https://www.linkedin.com/in/alex-scarlett-6a039175/" target="_blank">
-          <img src="./assets/images/Linkedin.png" alt="LinkedIn Logo">
-        </a>
+            </form>
+          </section>
+        </div>
 
-        <a href="https://stackoverflow.com/users/9246584/alex-scarlett?tab=profile" target="_blank">
-          <img src="./assets/images/stackoverflow.png" alt="StackOverflow Logo">
-        </a>
+        <div class="col-md-4">
 
-        <a href="https://medium.com/@alexscarlett" target="_blank">
-          <img src="./assets/images/medium.png" alt="Medium Logo">
-        </a>
+          <section id="social-links">
 
-      </section>
+            <h2>Connect With Me</h2>
+
+            <div class="row">
+
+              <div class="col-md-7">
+
+                <a href="https://www.github.com/alexscar99" target="_blank">
+                  <img src="./assets/imgs/Github.png" alt="GitHub Logo">
+                </a>
+
+              </div>
+
+              <div class="col-md-3">
+
+                <a href="https://www.linkedin.com/in/alex-scarlett-6a039175/" target="_blank">
+                  <img src="./assets/imgs/Linkedin.png" alt="LinkedIn Logo">
+                </a>
+
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-7">
+
+                <a href="https://stackoverflow.com/users/9246584/alex-scarlett?tab=profile" target="_blank">
+                  <img src="./assets/imgs/stackoverflow.png" alt="StackOverflow Logo">
+                </a>
+
+              </div>
+
+              <div class="col-md-3">
+
+                <a href="https://medium.com/@alexscarlett" target="_blank">
+                  <img src="./assets/imgs/medium.png" alt="Medium Logo">
+                </a>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
 
       <footer id="footer">
 

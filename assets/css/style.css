@@ -76,7 +76,9 @@ p {
 }
 
 #about-me,
-#portfolio {
+#portfolio,
+#contact-form,
+#social-links {
   border: 2px solid black;
   border-radius: 30px;
   box-shadow: 3px 3px 15px 8px #930d0f;
@@ -105,6 +107,68 @@ p {
   bottom: 10px;
   color: white;
   height: 46px;
+}
+
+#contact-form {
+  margin: 50px 50px 50px 125px;
+  padding: 20px 50px;
+  height: 640px;
+}
+
+#contact-form label {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#contact-form input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+#contact-form input {
+  height: 50px;
+}
+
+#contact-form input[type='submit'] {
+  background: black;
+  color: white;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#contact-form textarea {
+  height: 150px;
+}
+
+#social-links {
+  margin: 50px 125px 50px 50px;
+  height: 250px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#social-links h2 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+#social-links img {
+  height: 50px;
+  margin: 10px 2px 25px 5px;
 }
 
 #footer {
