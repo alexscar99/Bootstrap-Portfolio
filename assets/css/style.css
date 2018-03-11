@@ -60,7 +60,7 @@ p {
   height: 120px;
 }
 
-header {
+#navbar {
   position: absolute;
   top: 1200px;
   left: -10px;
@@ -103,10 +103,6 @@ header {
   height: 1200px;
 }
 
-.col-md-12 .row {
-  /* background-image: url(../imgs/background-crop.jpg); */
-}
-
 .site-on-load .col-md-4 {
   padding-right: 0;
 }
@@ -124,9 +120,18 @@ header {
   text-align: center;
 }
 
+.col-md-4 > p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  padding-top: 40px;
+}
+
 .site-on-load img {
   height: 300px;
-  margin-top: 150px;
+  margin: 0 0 0 90px;
 }
 
 #about-me,
