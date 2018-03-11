@@ -194,6 +194,19 @@ textarea {
     margin: 30px 40px 50px 40px;
   }
 
+  #contact-form,
+  #social-links {
+    display: block;
+  }
+
+  #contact-form {
+    margin: 50px 125px 75px 125px;
+  }
+
+  #social-links {
+    margin: 50px 175px;
+  }
+
   .portfolio-project {
     margin: 30px 160px;
   }
