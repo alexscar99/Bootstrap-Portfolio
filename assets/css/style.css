@@ -3,25 +3,38 @@
   font-family: 'Open Sans', sans-serif !important;
 }
 
-html,
 body {
   height: 100%;
+  width: 100%;
+  display: block;
   background-image: url(../imgs/white_wall_hash.png);
   font-size: 16px;
 }
 
 h1 {
-  margin-top: 15px;
+  margin-top: 35px;
+  text-shadow: 70px -27px 5px rgba(255, 255, 255, 0.53);
+  transition-duration: 1s;
+}
+
+h1:hover {
+  transform: translate(15px, 0);
+  transition-duration: 0.4s;
 }
 
 h1,
 h2 {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 h2 {
   margin: 20px 0;
   font-size: 30px;
+  text-shadow: 0 1px 0 black, 0 -1px 0 black, 1px 0 0 black, -1px 0 0 black;
+  color: #ba3d3d;
+  border-bottom: 2px dotted black;
+  padding-bottom: 4px;
+  display: inline;
 }
 
 h3 {
@@ -44,7 +57,14 @@ p {
   background: black;
   box-shadow: inset 0px 0px 90px 10px #930d0f;
   box-sizing: border-box;
-  height: 85px;
+  height: 120px;
+}
+
+header {
+  position: absolute;
+  top: 1200px;
+  left: -10px;
+  right: -10px;
 }
 
 .navbar > .container-fluid .navbar-brand {
@@ -55,24 +75,58 @@ p {
 }
 
 .navbar-default .navbar-nav .header-link {
-  color: white;
-  margin: 10px 30px 0 0;
+  color: red;
+  margin: 25px 30px 0 0;
   font-size: 18px;
   line-height: 35px;
   font-weight: bold;
+  transition-duration: 1s;
+}
+
+.navbar-default .navbar-nav > li > .header-link {
+  color: white;
 }
 
 .navbar-default .navbar-nav > li > .header-link:hover {
-  color: white;
+  color: red;
   outline: none;
+  text-shadow: 0 1px 0 white, 0 -1px 0 white, 1px 0 0 white, -1px 0 0 white;
+  transform: scale(1.5);
+  transition-duration: 0.4s;
 }
 
-.navbar-default .navbar-nav > li > .header-link:visited {
+.navbar-default .navbar-nav > li > .header-link:focus {
   color: white;
 }
 
-.header-link > span:hover {
-  border-bottom: 2px solid white;
+.site-on-load {
+  height: 1200px;
+}
+
+.col-md-12 .row {
+  background-image: url(../imgs/background-crop.jpg);
+}
+
+.site-on-load .col-md-4 {
+  padding-right: 0;
+}
+
+.site-on-load .col-md-8 {
+  height: 1200px;
+}
+
+.site-on-load p {
+  margin: 100px;
+  font-size: 80px;
+  line-height: 100px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.site-on-load img {
+  height: 300px;
+  margin-top: 150px;
 }
 
 #about-me,
@@ -83,7 +137,11 @@ p {
   border-radius: 30px;
   box-shadow: 3px 3px 15px 8px #930d0f;
   padding: 50px;
-  margin: 30px auto 50px auto;
+  margin: 200px auto 80px;
+}
+
+.about-me-first-p {
+  margin-top: 34px;
 }
 
 #about-me img {
@@ -113,6 +171,10 @@ p {
   margin: 50px 50px 50px 125px;
   padding: 20px 50px;
   height: 640px;
+}
+
+#contact-form .form-first-label {
+  margin-top: 24px;
 }
 
 #contact-form label {
@@ -168,12 +230,11 @@ textarea {
 
 #social-links img {
   height: 50px;
-  margin: 10px 2px 25px 5px;
+  margin: 30px 2px 25px 5px;
 }
 
 #footer {
   color: white;
-  position: relative;
   height: 60px;
   clear: both;
   padding: 20px;
