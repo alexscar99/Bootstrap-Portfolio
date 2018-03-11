@@ -138,7 +138,7 @@ p {
 #portfolio,
 #contact-form,
 #social-links {
-  background: #dbdbdb;
+  background-image: url(../imgs/white_wall_hash.png);
   border: 2px solid black;
   border-radius: 30px;
   box-shadow: 3px 3px 15px 8px #930d0f;
