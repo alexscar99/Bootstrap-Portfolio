@@ -99,19 +99,19 @@ p {
   color: white;
 }
 
-.site-on-load {
+#homepage-top {
   height: 1200px;
 }
 
-.site-on-load .col-md-4 {
+#homepage-top .col-md-4 {
   padding-right: 0;
 }
 
-.site-on-load .col-md-8 {
+#homepage-top .col-md-8 {
   height: 1200px;
 }
 
-.site-on-load p {
+#homepage-top p {
   margin: 100px;
   font-size: 80px;
   line-height: 100px;
@@ -120,7 +120,7 @@ p {
   text-align: center;
 }
 
-.col-md-4 > p {
+#homepage-top .col-md-4 > p {
   text-align: center;
   font-size: 30px;
   color: white;
@@ -129,7 +129,7 @@ p {
   padding-top: 40px;
 }
 
-.site-on-load img {
+#homepage-top img {
   height: 300px;
   margin: 0 0 0 90px;
 }
@@ -143,10 +143,15 @@ p {
   border-radius: 30px;
   box-shadow: 3px 3px 15px 8px #930d0f;
   padding: 50px;
+}
+
+#about-me {
   margin: 200px auto 80px;
 }
 
-.about-me-first-p {
+#about-me-first-p,
+#portfolio-first-row,
+#contact-form #form-first-label {
   margin-top: 34px;
 }
 
@@ -155,6 +160,10 @@ p {
   border: 3px solid;
   margin: 10px;
   border-radius: 10px;
+}
+
+#portfolio {
+  margin: 100px auto 110px;
 }
 
 .portfolio-project {
@@ -174,27 +183,20 @@ p {
 }
 
 #contact-form {
-  margin: 50px 50px 50px 125px;
-  padding: 20px 50px;
-  height: 640px;
-}
-
-#contact-form .form-first-label {
-  margin-top: 24px;
+  margin: 100px 50px 110px 125px;
+  height: 720px;
 }
 
 #contact-form label {
-  display: block;
   margin: 10px 0;
   font-size: 18px;
-  font-weight: bold;
 }
 
 #contact-form input,
 textarea {
   width: 100%;
   padding: 12px 20px;
-  margin: 10px 0;
+  margin: 18px 0;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -207,7 +209,7 @@ textarea {
   height: 50px;
 }
 
-#contact-form input[type='submit'] {
+#contact-form #contact-submit-btn {
   background: black;
   color: white;
   width: 100px;
@@ -222,9 +224,9 @@ textarea {
 }
 
 #social-links {
-  margin: 50px 125px 50px 50px;
+  margin: 100px 125px 110px 50px;
   height: 250px;
-  padding: 10px;
+  padding: 20px 10px;
   text-align: center;
   text-decoration: none;
 }
@@ -236,7 +238,7 @@ textarea {
 
 #social-links img {
   height: 50px;
-  margin: 30px 2px 25px 5px;
+  margin: 30px 2px 5px;
 }
 
 #footer {
