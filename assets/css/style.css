@@ -278,14 +278,29 @@ textarea {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .navbar > .container-fluid .navbar-brand {
-    margin-left: 5px;
-    font-size: 25px;
+@media screen and (max-width: 640px) {
+  #homepage-top .col-md-8 {
+    height: 300px;
   }
 
-  .nav > li {
-    margin-right: -100px;
+  #homepage-top p {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  #homepage-top .col-md-4 > p {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  #homepage-top img {
+    height: 120px;
+    margin: 0 250px;
+  }
+
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 35px;
+    font-size: 35px;
   }
 
   h2 {
@@ -294,7 +309,7 @@ textarea {
 
   #about-me,
   #portfolio {
-    margin: 30px 20px 50px 20px;
+    margin: 150px 20px 50px 20px;
   }
 
   #about-me img {
