@@ -98,11 +98,11 @@ p {
   color: white;
 }
 
-#homepage-top .col-md-4 {
+#homepage .col-md-4 {
   padding-right: 0;
 }
 
-#homepage-top p {
+#homepage p {
   margin: 100px;
   font-size: 60px;
   line-height: 100px;
@@ -111,7 +111,7 @@ p {
   text-align: center;
 }
 
-#homepage-top button {
+#homepage button {
   height: 100px;
   margin: 250px 0 90px;
   font-size: 30px;
