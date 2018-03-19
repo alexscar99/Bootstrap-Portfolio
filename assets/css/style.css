@@ -55,10 +55,8 @@ p {
 }
 
 #navbar {
-  position: absolute;
-  top: 1200px;
-  left: -10px;
-  right: -10px;
+  position: relative;
+  top: 0;
 }
 
 .navbar > .container-fluid .navbar-brand {
@@ -96,39 +94,24 @@ p {
   color: white;
 }
 
-#homepage-top {
-  height: 1200px;
-}
-
 #homepage-top .col-md-4 {
   padding-right: 0;
 }
 
-#homepage-top .col-md-8 {
-  height: 1200px;
-}
-
 #homepage-top p {
   margin: 100px;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 100px;
   color: white;
   font-weight: bolder;
   text-align: center;
 }
 
-#homepage-top .col-md-4 > p {
-  text-align: center;
+#homepage-top button {
+  height: 100px;
+  margin: 250px 0 90px;
   font-size: 30px;
-  color: white;
   font-weight: bold;
-  line-height: 30px;
-  padding-top: 40px;
-}
-
-#homepage-top img {
-  height: 300px;
-  margin: 0 0 0 90px;
 }
 
 #about-me,
@@ -143,7 +126,7 @@ p {
 }
 
 #about-me {
-  margin: 200px auto 80px;
+  margin: 80px auto;
 }
 
 #about-me-first-p,
@@ -169,6 +152,11 @@ p {
   height: 150px;
   text-align: center;
   margin: 30px 150px;
+}
+
+.portfolio-project img {
+  height: 150px;
+  width: 200px;
 }
 
 .portfolio-banner {
