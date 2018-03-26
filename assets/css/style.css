@@ -202,6 +202,8 @@ p {
 .portfolio-project img {
   height: 150px;
   width: 200px;
+  border: 4px solid #666363;
+  border-radius: 10px;
 }
 
 .portfolio-banner {
