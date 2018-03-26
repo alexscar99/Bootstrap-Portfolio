@@ -7,6 +7,11 @@ body {
   height: 100%;
   width: 100%;
   font-size: 16px;
+  background: url(../imgs/white_wall_hash.png);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 h1 {
@@ -47,9 +52,9 @@ p {
 #footer,
 .portfolio-banner {
   background: black;
-  box-shadow: inset 0px 0px 150px -20px #930d0f;
+  box-shadow: inset 0px 0px 165px 5px #930d0f;
   box-sizing: border-box;
-  height: 120px;
+  height: 100px;
 }
 
 #navbar {
@@ -61,8 +66,13 @@ p {
   border: none;
 }
 
+.navbar-brand {
+  padding: 5px 15px;
+}
+
 .navbar > .container-fluid .navbar-brand {
   margin-left: 45px;
+  margin-bottom: 10px;
   color: white;
   font-size: 42px;
   letter-spacing: 1.5px;
@@ -78,7 +88,7 @@ p {
 
 .navbar-default .navbar-nav .header-link {
   color: white;
-  margin: 25px 30px 0 0;
+  margin: 18px 30px 0px 0;
   font-size: 18px;
   line-height: 35px;
   font-weight: bold;
@@ -149,10 +159,14 @@ p {
 #portfolio,
 #contact-form,
 #social-links {
-  background-image: url(../imgs/white_wall_hash.png);
-  border: 3px solid black;
+  background-image: url(../imgs/triangle-white-bg.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  border: 5px solid black;
   border-radius: 30px;
-  box-shadow: 3px 3px 20px 6px #930d0f;
+  box-shadow: 5px 5px 10px 8px #666363;
   padding: 50px;
 }
 
@@ -168,8 +182,8 @@ p {
 
 #about-me img {
   height: 200px;
-  border: 3px solid;
-  margin: 10px;
+  border: 4px solid #666363;
+  margin: 35px 0 0 22px;
   border-radius: 10px;
 }
 
