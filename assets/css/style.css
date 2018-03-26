@@ -4,14 +4,8 @@
 }
 
 body {
-  background: url(../imgs/background-crop.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   height: 100%;
   width: 100%;
-  display: block;
   font-size: 16px;
 }
 
@@ -102,32 +96,53 @@ p {
   color: white;
 }
 
-#homepage .row {
+#homepage-full {
+  height: 100%;
   position: relative;
-  margin: 100px;
-}
-
-#homepage p {
-  font-size: 60px;
-  line-height: 100px;
-  color: white;
-  font-weight: bolder;
   text-align: center;
-  padding-top: 150px;
-}
-
-#homepage a {
-  padding-top: 275px;
-  padding-left: 75px;
-  display: block;
-  margin: 0 auto;
-}
-
-#homepage button {
-  height: 100px;
-  font-size: 30px;
   font-weight: bold;
-  border-radius: 15px;
+  width: 100%;
+  min-height: 350px;
+  background: url(../imgs/coding-bg.png) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: block;
+}
+
+.homepage-container {
+  margin: auto;
+  width: 50%;
+}
+
+.homepage-content {
+  text-align: center;
+  padding: 180px 0;
+}
+
+.homepage-content h1 {
+  font-size: 50px;
+  line-height: 70px;
+  color: black;
+  font-weight: bolder;
+}
+
+.homepage-content a {
+  text-decoration: none;
+  color: #bc1212;
+}
+
+.homepage-content p {
+  font-size: 25px;
+  padding-top: 75px;
+  font-weight: bold;
+}
+
+.svg-inline--fa {
+  padding-top: 15px;
+  font-size: 70px;
+  color: #bc1212;
 }
 
 #about-me,
