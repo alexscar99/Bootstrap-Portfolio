@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Oswald', sans-serif !important;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  margin-top: 35px;
+  margin-top: 40px;
   transition-duration: 1s;
 }
 
@@ -26,12 +26,11 @@ h2 {
 
 h2 {
   margin: 20px 0;
-  font-size: 30px;
-  text-shadow: 0 1px 0 black, 0 -1px 0 black, 1px 0 0 black, -1px 0 0 black;
+  font-size: 36px;
   color: #ba3d3d;
-  border-bottom: 2px dotted black;
-  padding-bottom: 4px;
+  border-bottom: 4px dotted black;
   display: inline;
+  letter-spacing: 1.5px;
 }
 
 h3 {
@@ -41,6 +40,7 @@ h3 {
 
 p {
   line-height: 25px;
+  font-size: 22px;
 }
 
 .navbar,
@@ -72,18 +72,18 @@ p {
   color: white;
   font-size: 25px;
   letter-spacing: 1.5px;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .name:hover,
 .page-link:hover {
   color: white;
   border-bottom: 2px solid white;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .navbar-nav {
-  padding: 1% 19.5%;
+  padding: 1% 23%;
 }
 
 .page-link {
@@ -91,8 +91,9 @@ p {
   font-size: 24px;
   line-height: 35px;
   font-weight: bold;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   margin: 0 30px;
+  letter-spacing: 2px;
 }
 
 .page-link:focus {
@@ -158,15 +159,9 @@ p {
   -o-background-size: cover;
   border: 5px solid black;
   border-radius: 15px;
+  box-shadow: 5px 5px 10px 8px #666363;
   text-align: center;
   margin: 160px auto 70px;
-}
-
-#portfolio,
-#contact-form,
-#social-links {
-  border-radius: 30px;
-  box-shadow: 5px 5px 10px 8px #666363;
 }
 
 #about-me-first-p,
@@ -187,7 +182,7 @@ p {
   width: 200px;
   height: 150px;
   text-align: center;
-  margin: 30px 150px;
+  margin: 50px auto;
 }
 
 .portfolio-project img {
@@ -206,14 +201,14 @@ p {
 }
 
 #contact-form {
-  /* margin: 100px 50px 110px 125px; */
   height: 720px;
 }
 
 #contact-form label {
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 22px;
   float: left;
+  letter-spacing: 1px;
 }
 
 #contact-form input,
@@ -242,6 +237,9 @@ textarea {
   cursor: pointer;
   font-weight: bold;
   float: left;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 5px 0;
 }
 
 #contact-form textarea {
@@ -249,7 +247,6 @@ textarea {
 }
 
 #social-links {
-  /* margin: 100px 125px 110px 50px; */
   height: 250px;
   padding: 20px 10px;
   text-align: center;
@@ -257,8 +254,9 @@ textarea {
 }
 
 #social-links h2 {
-  font-size: 25px;
+  font-size: 28px;
   margin: 15px 0;
+  margin-bottom: 3px dotted black;
 }
 
 #social-links img {
