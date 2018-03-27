@@ -39,10 +39,6 @@ h3 {
   margin-top: 14px;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 p {
   line-height: 25px;
 }
@@ -58,51 +54,55 @@ p {
 }
 
 #navbar {
-  position: relative;
+  position: fixed;
   top: 0;
+  width: 100%;
+  height: 85px;
+  border-bottom: 5px solid white;
+  z-index: 1;
+}
+
+.header-name {
+  margin-top: 20px;
 }
 
 .navbar-default {
   border: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid #666363;
 }
 
-.navbar-brand {
-  padding: 5px 15px;
-}
-
-.navbar > .container-fluid .navbar-brand {
-  margin-left: 45px;
-  margin-bottom: 10px;
+.name {
+  margin-left: 15px;
   color: white;
-  font-size: 42px;
+  font-size: 25px;
   letter-spacing: 1.5px;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
-.navbar > .container-fluid .navbar-brand:hover {
-  color: #930d0f;
-  text-shadow: 0 1px 0 white, 0 -1px 0 white, 1px 0 0 white, -1px 0 0 white;
-  transform: scale(1.25);
-  transition-duration: 0.4s;
-}
-
-.navbar-default .navbar-nav .header-link {
+.name:hover,
+.page-link:hover {
   color: white;
-  margin: 18px 30px 0px 0;
-  font-size: 18px;
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+
+.navbar-nav {
+  padding: 1% 19.5%;
+}
+
+.page-link {
+  color: white;
+  font-size: 24px;
   line-height: 35px;
   font-weight: bold;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
+  margin: 0 30px;
 }
 
-.navbar-default .navbar-nav > li > .header-link:hover {
-  color: #930d0f;
-  text-shadow: 0 1px 0 white, 0 -1px 0 white, 1px 0 0 white, -1px 0 0 white;
-  transform: scale(1.5);
-  transition-duration: 0.4s;
-}
-
-.navbar-default .navbar-nav > li > .header-link:focus {
+.page-link:focus {
   color: white;
 }
 
@@ -138,12 +138,8 @@ p {
   font-weight: bolder;
 }
 
-.homepage-content a {
-  text-decoration: none;
+.scroll-down p {
   color: #bc1212;
-}
-
-.homepage-content p {
   font-size: 25px;
   padding-top: 75px;
   font-weight: bold;
@@ -159,19 +155,26 @@ p {
 #portfolio,
 #contact-form,
 #social-links {
+  position: relative;
+  max-width: 80%;
+  padding: 50px;
   background-image: url(../imgs/triangle-white-bg.jpg);
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   border: 5px solid black;
-  border-radius: 30px;
-  box-shadow: 5px 5px 10px 8px #666363;
-  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 160px auto 70px;
 }
 
-#about-me {
-  margin: 80px auto;
+#portfolio,
+#contact-form,
+#social-links {
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 8px #666363;
+  margin: 220px auto 50px;
 }
 
 #about-me-first-p,
