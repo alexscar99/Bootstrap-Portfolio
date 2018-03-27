@@ -3,15 +3,14 @@
   font-family: 'Oswald', sans-serif !important;
 }
 
-body {
+html {
   height: 100%;
+}
+
+body {
+  min-height: 100%;
   width: 100%;
   font-size: 16px;
-  background: url(../imgs/white_wall_hash.png);
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 h1 {
@@ -34,12 +33,17 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 14px;
 }
 
+hr {
+  height: 5px;
+  background: white;
+}
+
 p {
-  line-height: 25px;
+  line-height: 30px;
   font-size: 22px;
 }
 
@@ -100,8 +104,9 @@ p {
   color: white;
 }
 
-#homepage-full {
-  height: 100%;
+#homepage-full,
+#about-full {
+  height: 100vh;
   position: relative;
   text-align: center;
   font-weight: bold;
@@ -132,32 +137,26 @@ p {
   font-weight: bolder;
 }
 
-.scroll-down p {
+.scroll-about p {
   color: #bc1212;
   font-size: 25px;
   padding-top: 75px;
   font-weight: bold;
 }
 
-.svg-inline--fa {
+.fa-address-card,
+.fa-envelope,
+.fa-desktop {
   padding-top: 15px;
   font-size: 70px;
   color: #bc1212;
 }
 
-#about-me,
-#portfolio,
 #contact-form,
 #social-links {
   position: relative;
   max-width: 80%;
   padding: 50px;
-  background-image: url(../imgs/triangle-white-bg.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  border: 5px solid black;
   border-radius: 15px;
   box-shadow: 5px 5px 10px 8px #666363;
   text-align: center;
@@ -170,11 +169,115 @@ p {
   margin-top: 34px;
 }
 
-#about-me img {
+#about-full {
+  background: url(../imgs/triangle-white-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.container-about {
+  width: 80%;
+  margin: auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+}
+
+#about-me {
+  position: relative;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+  box-shadow: 5px 3px 10px 8px #666363;
+  border: 4px solid #20a334;
+  padding: 32px;
+  margin: 6% auto;
+}
+
+#about-me p {
+  color: #666363;
+  font-size: 20px;
+}
+
+#about-me h2 {
+  color: #20a334;
+  border-bottom: 4px dotted #666363;
+}
+
+/* removed img */
+/* #about-me img {
   height: 200px;
   border: 4px solid #666363;
   margin: 35px 0 0 22px;
   border-radius: 10px;
+} */
+
+.scroll-container {
+  margin: 35% 40%;
+  width: 100%;
+}
+
+.scroll-contact,
+.scroll-projects {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.scroll-contact p,
+.scroll-projects p {
+  font-size: 32px;
+  color: #20a334;
+  font-weight: bold;
+}
+
+.fa-envelope,
+.fa-desktop {
+  color: #20a334;
+}
+
+#portfolio {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  background: #dbdbdb;
+}
+
+#portfolio .row {
+  margin: 5% 0;
+}
+
+#portfolio h2 {
+  color: #1736a8;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#portfolio h3 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 5%;
+  color: #1736a8;
+  letter-spacing: 1px;
+}
+
+.first-portfolio {
+  margin-top: 5%;
+}
+
+.portfolio-paragraph {
+  color: black;
+  padding: 80px 0;
+}
+
+.portfolio-img img {
+  height: 300px;
+  width: 400px;
+  border: 5px solid white;
+  border-radius: 12px;
 }
 
 .portfolio-project {
@@ -188,8 +291,8 @@ p {
 .portfolio-project img {
   height: 150px;
   width: 200px;
-  border: 4px solid #666363;
-  border-radius: 10px;
+  border: 5px solid white;
+  border-radius: 12px;
 }
 
 .portfolio-banner {
