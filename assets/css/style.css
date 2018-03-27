@@ -241,6 +241,7 @@ textarea {
   border: none;
   cursor: pointer;
   font-weight: bold;
+  float: left;
 }
 
 #contact-form textarea {
