@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif !important;
 }
 
 html {
@@ -8,6 +7,7 @@ html {
 }
 
 body {
+  font-family: 'Oswald', sans-serif;
   min-height: 100%;
   width: 100%;
   font-size: 16px;
@@ -39,69 +39,12 @@ h3 {
 
 hr {
   height: 5px;
-  background: white;
+  background: black;
 }
 
 p {
   line-height: 30px;
   font-size: 22px;
-}
-
-.navbar,
-.navbar-default,
-#footer,
-.portfolio-banner {
-  background: black;
-  box-shadow: inset 0px 0px 165px 5px #930d0f;
-  box-sizing: border-box;
-  height: 100px;
-}
-
-#navbar,
-.navbar-default {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 85px;
-  border-bottom: 5px solid black;
-  z-index: 1;
-}
-
-.header-name {
-  margin-top: 20px;
-}
-
-.name {
-  margin-left: 15px;
-  color: white;
-  font-size: 25px;
-  letter-spacing: 1.5px;
-  transition-duration: 0.3s;
-}
-
-.name:hover,
-.page-link:hover {
-  color: white;
-  border-bottom: 2px solid white;
-  padding-bottom: 2px;
-}
-
-.navbar-nav {
-  padding: 1% 21.5%;
-}
-
-.page-link {
-  color: white;
-  font-size: 24px;
-  line-height: 35px;
-  font-weight: bold;
-  transition-duration: 0.3s;
-  margin: 0 30px;
-  letter-spacing: 2px;
-}
-
-.page-link:focus {
-  color: white;
 }
 
 #homepage-full,
@@ -138,7 +81,7 @@ p {
 }
 
 .scroll-about p {
-  color: #bc1212;
+  color: #34a58e;
   font-size: 25px;
   padding-top: 75px;
   font-weight: bold;
@@ -149,18 +92,7 @@ p {
 .fa-desktop {
   padding-top: 15px;
   font-size: 70px;
-  color: #bc1212;
-}
-
-#contact-form,
-#social-links {
-  position: relative;
-  max-width: 80%;
-  padding: 50px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 8px #666363;
-  text-align: center;
-  margin: 160px auto 70px;
+  color: #34a58e;
 }
 
 #about-me-first-p,
@@ -169,7 +101,8 @@ p {
   margin-top: 34px;
 }
 
-#about-full {
+#about-full,
+#contact {
   background: url(../imgs/triangle-white-bg.jpg) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -193,7 +126,7 @@ p {
   background: white;
   text-align: center;
   box-shadow: 5px 3px 10px 8px #666363;
-  border: 4px solid #20a334;
+  border: 5px solid #34a58e;
   padding: 32px;
   margin: 6% auto;
 }
@@ -204,17 +137,9 @@ p {
 }
 
 #about-me h2 {
-  color: #20a334;
+  color: #34a58e;
   border-bottom: 4px dotted #666363;
 }
-
-/* removed img */
-/* #about-me img {
-  height: 200px;
-  border: 4px solid #666363;
-  margin: 35px 0 0 22px;
-  border-radius: 10px;
-} */
 
 .scroll-container {
   margin: 35% 40%;
@@ -230,20 +155,25 @@ p {
 .scroll-contact p,
 .scroll-projects p {
   font-size: 32px;
-  color: #20a334;
+  color: #34a58e;
   font-weight: bold;
 }
 
 .fa-envelope,
 .fa-desktop {
-  color: #20a334;
+  color: #34a58e;
 }
 
 #portfolio {
   text-align: center;
   margin: auto;
   width: 100%;
-  background: #dbdbdb;
+  background: url(../imgs/turquoise-polygon-bg.png) no-repeat center center
+    fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 #portfolio .row {
@@ -251,7 +181,7 @@ p {
 }
 
 #portfolio h2 {
-  color: #1736a8;
+  color: black;
   font-size: 60px;
   font-weight: bold;
 }
@@ -260,7 +190,7 @@ p {
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 5%;
-  color: #1736a8;
+  color: black;
   letter-spacing: 1px;
 }
 
@@ -276,55 +206,58 @@ p {
 .portfolio-img img {
   height: 300px;
   width: 400px;
-  border: 5px solid white;
+  border: 5px solid black;
   border-radius: 12px;
 }
 
-.portfolio-project {
+#contact {
   position: relative;
-  width: 200px;
-  height: 150px;
-  text-align: center;
-  margin: 50px auto;
-}
-
-.portfolio-project img {
-  height: 150px;
-  width: 200px;
-  border: 5px solid white;
-  border-radius: 12px;
-}
-
-.portfolio-banner {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  color: white;
-  height: 46px;
+  height: 980px;
 }
 
 #contact-form {
-  height: 720px;
+  position: relative;
+  display: block;
+  max-width: 80%;
+  padding: 20px 50px;
+  border-radius: 15px;
+  margin: 5.5% auto;
+  box-shadow: 5px 3px 10px 8px #666363;
+  border: 5px solid #34a58e;
+  background: white;
+}
+
+#contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 45px;
+  color: #34a58e;
+  border-bottom: none;
+  text-align: center;
+  display: block;
 }
 
 #contact-form label {
-  margin: 10px 0;
-  font-size: 22px;
-  float: left;
+  margin: 20px 0;
+  display: block;
+  font-size: 24px;
   letter-spacing: 1px;
+  color: #34a58e;
+  margin-left: 10%;
 }
 
 #contact-form input,
 textarea {
-  width: 100%;
+  width: 80%;
   padding: 12px 20px;
-  margin: 18px 0;
+  margin: 0 auto;
+  text-indent: 10px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
+  border: 2px solid #34a58e;
+  border-radius: 8px;
   background-color: #f8f8f8;
-  font-size: 16px;
+  font-size: 18px;
   resize: none;
+  display: block;
 }
 
 #contact-form input {
@@ -332,120 +265,76 @@ textarea {
 }
 
 #contact-form #contact-submit-btn {
-  background: black;
+  background: #34a58e;
   color: white;
-  width: 100px;
-  border-radius: 10px;
+  width: 120px;
+  border-radius: 12px;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  float: left;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 1px;
-  margin: 5px 0;
+  margin: 35px auto 25px auto;
+  padding-left: 10px;
+  padding-bottom: 45px;
 }
 
 #contact-form textarea {
   height: 150px;
 }
 
-#social-links {
-  height: 250px;
-  padding: 20px 10px;
-  text-align: center;
-  text-decoration: none;
+#contact-form label.form-msg {
+  margin-right: 67%;
 }
 
-#social-links h2 {
-  font-size: 28px;
-  margin: 15px 0;
-  margin-bottom: 3px dotted black;
-}
-
-#social-links img {
-  height: 50px;
-  margin: 30px 2px 5px;
+.footer-container {
+  position: relative;
 }
 
 #footer {
+  position: absolute;
+  bottom: 0;
   color: white;
-  height: 60px;
-  clear: both;
-  padding: 20px;
-  text-align: center;
+  background: #34a58e;
+  height: 125px;
+  width: 100%;
+  opacity: 0.5;
 }
 
-/* @media screen and (max-width: 768px) {
-  .nav > li {
-    margin-right: -30px;
-  }
-
-  #about-me img {
-    margin: 0 auto 30px;
-    display: block;
-  }
-
-  #portfolio {
-    margin: 30px 40px 50px 40px;
-  }
-
-  #contact-form,
-  #social-links {
-    display: block;
-  }
-
-  #contact-form {
-    margin: 50px 125px 75px 125px;
-  }
-
-  #social-links {
-    margin: 50px 175px;
-  }
-
-  .portfolio-project {
-    margin: 30px 160px;
-  }
+.copyright {
+  float: left;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
-@media screen and (max-width: 640px) {
-  #homepage-top .col-md-8 {
-    height: 300px;
-  }
+.social {
+  margin-left: 22%;
+}
 
-  #homepage-top p {
-    font-size: 25px;
-    line-height: 50px;
-  }
+.social p {
+  font-size: 40px;
+  padding: 45px;
+  padding-top: 50px;
+  color: white;
+  margin-bottom: 0;
+}
 
-  #homepage-top .col-md-4 > p {
-    font-size: 20px;
-    margin-top: 0;
-  }
+.social a {
+  text-decoration: none;
+}
 
-  #homepage-top img {
-    height: 120px;
-    margin: 0 250px;
-  }
+.social p,
+.social i {
+  float: left;
+  margin-bottom: 0;
+}
 
-  .navbar > .container-fluid .navbar-brand {
-    margin-left: 35px;
-    font-size: 35px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  #about-me,
-  #portfolio {
-    margin: 150px 20px 50px 20px;
-  }
-
-  #about-me img {
-    margin-bottom: 30px;
-  }
-
-  .portfolio-project {
-    margin: 30px 2px;
-  }
-} */
+.fa-github-square,
+.fa-linkedin,
+.fa-stack-overflow,
+.fa-medium {
+  color: white;
+  font-size: 50px;
+  margin: 35px;
+  margin-top: 40px;
+}

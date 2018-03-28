@@ -29,13 +29,14 @@
     </div>
   </div>
 
-  <header>
+  <!-- Got rid of header and made it all one page
+    <header>
 
     <nav id="navbar" class="navbar navbar-default">
 
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+      
+         <div class="navbar-header">
 
           <h1 class="header-name">
             <a class="navbar-brand" href="#navbar">
@@ -54,8 +55,8 @@
                 <span class="page-link">About</span>
               </a>
             </li>
-
-            <li>
+ 
+             <li>
               <a class="header-link" href="portfolio.html">
                 <span class="page-link">Portfolio</span>
               </a>
@@ -70,8 +71,8 @@
 
         </div>
       </div>
-    </nav>
-  </header>
+    </nav> 
+  </header> -->
 
   <div id="about-full">
     <div class="container-about">
@@ -133,7 +134,7 @@
 
     <div class="container">
 
-      <section id="portfolio">
+      <section>
 
         <h2>Projects</h2>
 
@@ -252,11 +253,58 @@
     </div>
   </div>
 
-  <footer id="footer">
+  <div id="contact">
+    <div class="container">
 
-    <p>&copy; Copyright 2018 Alex Scarlett</p>
+      <section id="contact-form">
 
-  </footer>
+        <h2>Contact Me</h2>
+
+        <form action="mailto:alex.scarlett91@gmail.com" method="post" enctype="text/plain">
+
+          <label id="form-first-label">Name</label>
+          <input type="text" name="name" placeholder="Your Name">
+
+          <label>Email</label>
+          <input type="text" name="email" placeholder="Your Email">
+
+          <label class="form-msg">Message</label>
+          <textarea type="text" name="message" placeholder="Your Message"></textarea> </textarea>
+
+          <input id="contact-submit-btn" type="submit" value="Submit">
+
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <footer id="footer">
+
+      <p class="copyright">&copy; Copyright 2018 Alex Scarlett</p>
+
+      <div class="social">
+        <p>Connect With Me:</p>
+
+        <a href="https://www.github.com/alexscar99" target="_blank">
+          <i class="fab fa-github-square"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/alex-scarlett-6a039175/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://stackoverflow.com/users/9246584/alex-scarlett?tab=profile" target="_blank">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+
+        <a href="https://medium.com/@alexscarlett" target="_blank">
+          <i class="fab fa-medium"></i>
+        </a>
+
+      </div>
+    </footer>
+  </div>
 
 </body>
 

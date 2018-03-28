@@ -1,12 +1,10 @@
 $(document).ready(function() {
-  // hide navbar and footer
-  $('#navbar, #footer').css('display', 'none');
-
   // hide body and fade in
   $('body').css('display', 'none');
 
   $('body').fadeIn(2500);
 
+  // scroll to about section
   $('.scroll-about').click(function() {
     $('html, body').animate(
       {
@@ -14,8 +12,6 @@ $(document).ready(function() {
       },
       1500
     );
-    //$('#homepage-full').fadeOut(1500);
-    // $('#navbar').fadeIn(1500);
   });
 
   $('.scroll-projects').click(function() {
@@ -32,8 +28,7 @@ $(document).ready(function() {
       {
         scrollTop: $('#contact').offset().top
       },
-      1500
+      2000
     );
-    $('#footer').fadeIn(1500);
   });
 });
