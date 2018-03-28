@@ -26,8 +26,6 @@ h2 {
 h2 {
   margin: 20px 0;
   font-size: 36px;
-  color: #ba3d3d;
-  border-bottom: 4px dotted black;
   display: inline;
   letter-spacing: 1.5px;
 }
@@ -40,6 +38,7 @@ h3 {
 hr {
   height: 5px;
   background: black;
+  border: none;
 }
 
 p {
@@ -48,19 +47,27 @@ p {
 }
 
 #homepage-full,
-#about-full {
+#about-full,
+#contact-full {
   height: 100vh;
   position: relative;
   text-align: center;
   font-weight: bold;
   width: 100%;
   min-height: 350px;
+  display: block;
+}
+
+#homepage-full {
   background: url(../imgs/coding-bg.png) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  display: block;
+}
+
+#about-full {
+  background: black;
 }
 
 .homepage-container {
@@ -89,7 +96,11 @@ p {
 
 .fa-address-card,
 .fa-envelope,
-.fa-desktop {
+.fa-desktop,
+.fa-github-square,
+.fa-linkedin,
+.fa-stack-overflow,
+.fa-medium {
   padding-top: 15px;
   font-size: 70px;
   color: #34a58e;
@@ -101,16 +112,8 @@ p {
   margin-top: 34px;
 }
 
-#about-full,
-#contact {
-  background: url(../imgs/triangle-white-bg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
-.container-about {
+.container-about,
+.container-contact {
   width: 80%;
   margin: auto;
   background-size: cover;
@@ -120,47 +123,57 @@ p {
   height: 100vh;
 }
 
-#about-me {
+#about-me,
+#contact-form {
   position: relative;
   border-radius: 10px;
-  background: white;
+  /* background: white; */
   text-align: center;
-  box-shadow: 5px 3px 10px 8px #666363;
-  border: 5px solid #34a58e;
+  border: 6px solid #34a58e;
   padding: 32px;
   margin: 6% auto;
 }
 
+#about-me {
+  background: white;
+}
+
 #about-me p {
-  color: #666363;
+  color: black;
   font-size: 20px;
 }
 
 #about-me h2 {
   color: #34a58e;
-  border-bottom: 4px dotted #666363;
 }
 
-.scroll-container {
+.scroll-container,
+.social-container {
   margin: 35% 40%;
   width: 100%;
 }
 
 .scroll-contact,
-.scroll-projects {
+.scroll-projects,
+.social {
   text-align: center;
   padding: 100px 0;
 }
 
 .scroll-contact p,
-.scroll-projects p {
+.scroll-projects p,
+.social p {
   font-size: 32px;
   color: #34a58e;
   font-weight: bold;
 }
 
 .fa-envelope,
-.fa-desktop {
+.fa-desktop,
+.fa-github-square,
+.fa-linkedin,
+.fa-stack-overflow,
+.fa-medium {
   color: #34a58e;
 }
 
@@ -168,12 +181,7 @@ p {
   text-align: center;
   margin: auto;
   width: 100%;
-  background: url(../imgs/turquoise-polygon-bg.png) no-repeat center center
-    fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: #34a58e;
 }
 
 #portfolio .row {
@@ -212,37 +220,30 @@ p {
 
 #contact {
   position: relative;
-  height: 980px;
+  background: white;
 }
 
 #contact-form {
-  position: relative;
-  display: block;
-  max-width: 80%;
-  padding: 20px 50px;
-  border-radius: 15px;
-  margin: 5.5% auto;
-  box-shadow: 5px 3px 10px 8px #666363;
-  border: 5px solid #34a58e;
-  background: white;
+  margin: 3% auto;
+  margin-bottom: 0;
+  width: 60%;
+  background: black;
+  padding: 25px;
 }
 
 #contact-form h2 {
   margin-bottom: 20px;
   font-size: 45px;
   color: #34a58e;
-  border-bottom: none;
   text-align: center;
   display: block;
 }
 
 #contact-form label {
-  margin: 20px 0;
   display: block;
   font-size: 24px;
   letter-spacing: 1px;
   color: #34a58e;
-  margin-left: 10%;
 }
 
 #contact-form input,
@@ -250,10 +251,9 @@ textarea {
   width: 80%;
   padding: 12px 20px;
   margin: 0 auto;
-  text-indent: 10px;
   box-sizing: border-box;
-  border: 2px solid #34a58e;
-  border-radius: 8px;
+  border: 3px solid #34a58e;
+  border-radius: 12px;
   background-color: #f8f8f8;
   font-size: 18px;
   resize: none;
@@ -266,7 +266,7 @@ textarea {
 
 #contact-form #contact-submit-btn {
   background: #34a58e;
-  color: white;
+  color: black;
   width: 120px;
   border-radius: 12px;
   border: none;
@@ -274,8 +274,8 @@ textarea {
   font-weight: bold;
   font-size: 22px;
   letter-spacing: 1px;
-  margin: 35px auto 25px auto;
-  padding-left: 10px;
+  margin: 35px auto 5px auto;
+  padding-left: 20px;
   padding-bottom: 45px;
 }
 
@@ -287,54 +287,52 @@ textarea {
   margin-right: 67%;
 }
 
-.footer-container {
-  position: relative;
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  color: white;
-  background: #34a58e;
-  height: 125px;
-  width: 100%;
-  opacity: 0.5;
-}
-
-.copyright {
-  float: left;
-  font-size: 20px;
-  margin-bottom: 0;
+#form-first-label,
+.email-label,
+.form-msg {
+  margin: 3% 72% 3% auto;
 }
 
 .social {
-  margin-left: 22%;
+  padding: 15% 0;
 }
 
 .social p {
+  text-align: center;
+  padding-bottom: 10%;
   font-size: 40px;
-  padding: 45px;
-  padding-top: 50px;
-  color: white;
-  margin-bottom: 0;
+  color: black;
 }
 
 .social a {
   text-decoration: none;
 }
 
-.social p,
-.social i {
-  float: left;
-  margin-bottom: 0;
-}
-
 .fa-github-square,
 .fa-linkedin,
 .fa-stack-overflow,
 .fa-medium {
-  color: white;
-  font-size: 50px;
-  margin: 35px;
-  margin-top: 40px;
+  font-size: 70px;
+  color: black;
+}
+
+.footer-container {
+  position: relative;
+}
+
+#footer {
+  position: absolute;
+  color: black;
+  background: #34a58e;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 2%;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-top: 4px;
 }
