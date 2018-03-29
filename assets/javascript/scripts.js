@@ -5,6 +5,10 @@ $(document).ready(function() {
   // $('#homepage-full').fadeIn(2500);
   $('.scroll-about').hide();
 
+  $('label').hide();
+
+  $('.name-input, .email-input, .msg-input').css('margin', '8% auto');
+
   $(function() {
     var string =
       "Hi, I'm Alex Scarlett. I'm a full-stack web developer who enjoys coding anything and everything.";
@@ -54,5 +58,23 @@ $(document).ready(function() {
       },
       1500
     );
+  });
+
+  $('.name-input').click(function() {
+    $(this).attr('placeholder', '');
+    $('#form-first-label').fadeIn(1500);
+    $(this).css('margin', '0 auto');
+  });
+
+  $('.email-input').click(function() {
+    $(this).attr('placeholder', '');
+    $('.email-label').fadeIn(1500);
+    $(this).css('margin', '0 auto');
+  });
+
+  $('.msg-input').click(function() {
+    $(this).attr('placeholder', '');
+    $('.form-msg').fadeIn(1500);
+    $(this).css('margin', '0 auto');
   });
 });
