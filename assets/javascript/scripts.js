@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // hide langing page text until greeting is displayed
+  // hide landing page text until greeting is displayed
   $('.scroll-about').hide();
 
   // hide labels for contact form
@@ -8,38 +8,39 @@ $(document).ready(function() {
   // add margin to input fields in contact form while labels are hidden
   $('.name-input, .email-input, .msg-input').css('margin', '8% auto');
 
-  // display greeting letter by letter
   $(function() {
     var greeting =
       "Hi, I'm Alex Scarlett. A web developer who will build your next project.";
+    // create array of each letter from greeting, run function to put span around that letter
     var lettersArray = jQuery.map(greeting.split(''), function(letter) {
       return $('<span>' + letter + '</span>');
     });
 
-    var dest = $('#homepage-heading');
+    var greetingLocation = $('#homepage-heading');
 
+    // counter and interval to populate each letter from greeting
     var counter = 0;
     var i = setInterval(function() {
       lettersArray[counter]
-        .appendTo(dest)
+        .appendTo(greetingLocation)
         .hide()
         .fadeIn(90);
       counter += 1;
-      if (counter >= lettersArray.length) {
+      // after greeting is fully displayed:
+      if (counter === lettersArray.length) {
         clearInterval(i);
-        // after greeting is displayed, fade in the rest of the page text
-        $('.scroll-about').fadeIn(2500);
+        $('.scroll-about').fadeIn(1500);
       }
     }, 90);
   });
 
-  // scroll to about section
+  // on click: scroll to various sections of site
   $('.scroll-about').click(function() {
     $('html, body').animate(
       {
         scrollTop: $('#about-full').offset().top
       },
-      1500
+      1000
     );
   });
 
@@ -48,7 +49,7 @@ $(document).ready(function() {
       {
         scrollTop: $('#portfolio').offset().top
       },
-      1500
+      1000
     );
   });
 
@@ -61,6 +62,7 @@ $(document).ready(function() {
     );
   });
 
+  // on click: contact form inputs removing placeholder and fading in a label
   $('.name-input').click(function() {
     $(this).attr('placeholder', '');
     $('#form-first-label').fadeIn(1500);

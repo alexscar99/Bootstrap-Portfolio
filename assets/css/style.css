@@ -286,13 +286,19 @@ textarea {
   border: 3px solid #34a58e;
   border-radius: 12px;
   background-color: #f8f8f8;
-  font-size: 18px;
+  font-size: 22px;
   resize: none;
   display: block;
 }
 
 #contact-form input {
-  height: 50px;
+  height: 60px;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
 }
 
 #contact-form #contact-submit-btn {
