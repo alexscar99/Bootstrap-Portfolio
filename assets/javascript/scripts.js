@@ -1,18 +1,18 @@
 $(document).ready(function() {
-  // hide body and fade in
-  // $('body').css('display', 'none');
-
-  // $('#homepage-full').fadeIn(2500);
+  // hide langing page text until greeting is displayed
   $('.scroll-about').hide();
 
+  // hide labels for contact form
   $('label').hide();
 
+  // add margin to input fields in contact form while labels are hidden
   $('.name-input, .email-input, .msg-input').css('margin', '8% auto');
 
+  // display greeting letter by letter
   $(function() {
-    var string =
-      "Hi, I'm Alex Scarlett. I'm a full-stack web developer who enjoys coding anything and everything.";
-    var lettersArray = jQuery.map(string.split(''), function(letter) {
+    var greeting =
+      "Hi, I'm Alex Scarlett. A web developer who will build your next project.";
+    var lettersArray = jQuery.map(greeting.split(''), function(letter) {
       return $('<span>' + letter + '</span>');
     });
 
@@ -23,13 +23,14 @@ $(document).ready(function() {
       lettersArray[counter]
         .appendTo(dest)
         .hide()
-        .fadeIn(75);
+        .fadeIn(90);
       counter += 1;
       if (counter >= lettersArray.length) {
         clearInterval(i);
-        $('.scroll-about').fadeIn(2000);
+        // after greeting is displayed, fade in the rest of the page text
+        $('.scroll-about').fadeIn(2500);
       }
-    }, 75);
+    }, 90);
   });
 
   // scroll to about section
