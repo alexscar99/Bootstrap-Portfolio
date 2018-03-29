@@ -28,7 +28,7 @@ $(document).ready(function() {
       {
         scrollTop: $('#contact').offset().top
       },
-      2000
+      1500
     );
   });
 });

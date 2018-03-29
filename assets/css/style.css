@@ -88,7 +88,7 @@ p {
 }
 
 .scroll-about p {
-  color: #34a58e;
+  color: black;
   font-size: 25px;
   padding-top: 75px;
   font-weight: bold;
@@ -103,7 +103,7 @@ p {
 .fa-medium {
   padding-top: 15px;
   font-size: 70px;
-  color: #34a58e;
+  color: black;
 }
 
 #about-me-first-p,
