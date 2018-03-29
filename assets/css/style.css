@@ -1,4 +1,9 @@
 * {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  position: relative;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -88,22 +93,49 @@ p {
 }
 
 .scroll-about p {
-  color: black;
   font-size: 25px;
   padding-top: 75px;
   font-weight: bold;
 }
 
+.scroll-about {
+  color: black;
+}
+
+.scroll-about:hover {
+  cursor: pointer;
+  color: #bc1212;
+}
+
+.scroll-contact > a:hover:before,
+.scroll-projects > a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 .fa-address-card,
+.fa-github-square,
+.fa-linkedin,
+.fa-stack-overflow,
+.fa-medium,
 .fa-envelope,
-.fa-desktop,
+.fa-desktop {
+  padding-top: 15px;
+  font-size: 70px;
+}
+
 .fa-github-square,
 .fa-linkedin,
 .fa-stack-overflow,
 .fa-medium {
-  padding-top: 15px;
-  font-size: 70px;
   color: black;
+}
+
+.fa-github-square:hover,
+.fa-linkedin:hover,
+.fa-stack-overflow:hover,
+.fa-medium:hover {
+  color: #34a58e;
 }
 
 #about-me-first-p,
@@ -127,7 +159,6 @@ p {
 #contact-form {
   position: relative;
   border-radius: 10px;
-  /* background: white; */
   text-align: center;
   border: 6px solid #34a58e;
   padding: 32px;
@@ -153,6 +184,16 @@ p {
   width: 100%;
 }
 
+.scroll-section {
+  color: white;
+}
+
+.scroll-contact:hover,
+.scroll-projects:hover {
+  cursor: pointer;
+  color: #34a58e;
+}
+
 .scroll-contact,
 .scroll-projects,
 .social {
@@ -161,20 +202,10 @@ p {
 }
 
 .scroll-contact p,
-.scroll-projects p,
-.social p {
+.scroll-projects p {
   font-size: 32px;
-  color: #34a58e;
+  /* color: white; */
   font-weight: bold;
-}
-
-.fa-envelope,
-.fa-desktop,
-.fa-github-square,
-.fa-linkedin,
-.fa-stack-overflow,
-.fa-medium {
-  color: #34a58e;
 }
 
 #portfolio {
