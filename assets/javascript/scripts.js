@@ -55,4 +55,51 @@ $(document).ready(function() {
       1500
     );
   });
+
+  $('.form-textarea').hide();
+
+  // hide msg input when clicked, fade in the textarea, animate with a border, resize margins, and focus on textarea
+  $('.form-msg-input').click(function() {
+    $(this).hide();
+
+    $('.form-textarea').fadeIn(500);
+
+    $('.form-textarea').animate({ borderWidth: '3px' }, 1250);
+
+    $('#contact-form p, #contact-form input, .form-textarea').css(
+      'margin',
+      '2% auto'
+    );
+
+    $('#contact-form .form-first-p').css('margin-top', '7%');
+
+    $('#contact-form button').css('margin', '2.5% auto');
+
+    $('.form-textarea').focus();
+  });
+
+  // if user tabs through the form, make the above event still trigger and have them focus on textarea after
+  $('.form-msg-input').on('focus', function(event) {
+    $(window).keyup(function(event) {
+      var code = event.keyCode || event.which;
+      if (code == 9) {
+        $('.form-msg-input').hide();
+
+        $('.form-textarea').fadeIn(500);
+
+        $('.form-textarea').animate({ borderWidth: '3px' }, 1250);
+
+        $('#contact-form p, #contact-form input, .form-textarea').css(
+          'margin',
+          '2% auto'
+        );
+
+        $('#contact-form .form-first-p').css('margin-top', '7%');
+
+        $('#contact-form button').css('margin', '2.5% auto');
+
+        $('.form-textarea').focus();
+      }
+    });
+  });
 });
