@@ -211,7 +211,7 @@ p {
 }
 
 #portfolio .row p {
-  color: white;
+  color: #def2f1;
 }
 
 #portfolio .container {
@@ -219,7 +219,7 @@ p {
 }
 
 #portfolio h2 {
-  color: black;
+  color: #def2f1;
   font-size: 60px;
   font-weight: bold;
 }
@@ -243,7 +243,7 @@ p {
 .portfolio-img img {
   height: 300px;
   width: 400px;
-  border: 3px solid white;
+  border: 3px solid #def2f1;
   border-radius: 12px;
 }
 
