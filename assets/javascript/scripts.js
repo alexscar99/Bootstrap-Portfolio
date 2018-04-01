@@ -7,7 +7,7 @@ $(document).ready(function() {
       "Hi, I'm Alex Scarlett. A web developer who will build your next project.";
     // create array of each letter from greeting, run function to put span around that letter
     var lettersArray = jQuery.map(greeting.split(''), function(letter) {
-      return $('<span class="greeting">' + letter + '</span>');
+      return $('<span>' + letter + '</span>');
     });
 
     var greetingLocation = $('#homepage-heading');
@@ -28,7 +28,7 @@ $(document).ready(function() {
     }, 90);
   });
 
-  // on click: scroll to various sections of site
+  // on click: scroll to various sections
   $('.scroll-about').click(function() {
     $('html, body').animate(
       {
