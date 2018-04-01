@@ -100,17 +100,12 @@ p {
 
 .scroll-about {
   color: black;
+  padding-top: 8%;
 }
 
-.scroll-about:hover {
+.scroll-about-section:hover {
   cursor: pointer;
   color: #bc1212;
-}
-
-.scroll-contact > a:hover:before,
-.scroll-projects > a:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
 }
 
 .fa-address-card,
@@ -124,18 +119,11 @@ p {
   font-size: 70px;
 }
 
-.fa-github-square,
-.fa-linkedin,
-.fa-stack-overflow,
-.fa-medium {
-  color: black;
-}
-
 .fa-github-square:hover,
 .fa-linkedin:hover,
 .fa-stack-overflow:hover,
 .fa-medium:hover {
-  color: #34a58e;
+  color: black;
 }
 
 #about-me-first-p,
@@ -155,48 +143,60 @@ p {
   height: 100vh;
 }
 
+.container-about {
+  padding: 75px;
+}
+
 #about-me,
 #contact-form {
   position: relative;
   border-radius: 10px;
   text-align: center;
-  border: 6px solid #34a58e;
+  border: 3px solid black;
   padding: 32px;
   margin: 6% auto;
 }
 
 #about-me {
   background: white;
+  box-shadow: 3px 2px 20px 2px #34a58e;
+  margin: 0 auto;
 }
 
 #about-me p {
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #about-me h2 {
   color: #34a58e;
 }
 
-.scroll-container,
-.social-container {
-  margin: 35% 40%;
-  width: 100%;
+.scroll-container {
+  margin: 0 auto;
+  display: block;
 }
 
 .scroll-section {
   color: white;
 }
 
-.scroll-contact:hover,
-.scroll-projects:hover {
+.scroll-about-section,
+.scroll-contact-section,
+.scroll-projects-section {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
+.scroll-contact-section:hover,
+.scroll-projects-section:hover {
   cursor: pointer;
   color: #34a58e;
 }
 
 .scroll-contact,
-.scroll-projects,
-.social {
+.scroll-projects {
   text-align: center;
   padding: 100px 0;
 }
@@ -204,7 +204,6 @@ p {
 .scroll-contact p,
 .scroll-projects p {
   font-size: 32px;
-  /* color: white; */
   font-weight: bold;
 }
 
@@ -217,6 +216,14 @@ p {
 
 #portfolio .row {
   margin: 5% 0;
+}
+
+#portfolio .row p {
+  color: white;
+}
+
+#portfolio .container {
+  padding-top: 50px;
 }
 
 #portfolio h2 {
@@ -257,9 +264,11 @@ p {
 #contact-form {
   margin: 3% auto;
   margin-bottom: 0;
-  width: 60%;
+  width: 70%;
   background: black;
   padding: 25px;
+  border: 2px solid white;
+  box-shadow: 5px 5px 20px 5px black;
 }
 
 #contact-form h2 {
@@ -286,19 +295,9 @@ textarea {
   border: 3px solid #34a58e;
   border-radius: 12px;
   background-color: #f8f8f8;
-  font-size: 22px;
+  font-size: 18px;
   resize: none;
   display: block;
-}
-
-#contact-form input {
-  height: 60px;
-  font-size: 20px;
-}
-
-::placeholder {
-  color: black;
-  opacity: 1;
 }
 
 #contact-form #contact-submit-btn {
@@ -313,7 +312,6 @@ textarea {
   letter-spacing: 1px;
   margin: 35px auto 5px auto;
   padding-left: 20px;
-  padding-bottom: 45px;
 }
 
 #contact-form textarea {
@@ -331,18 +329,13 @@ textarea {
 }
 
 .social {
-  padding: 15% 0;
-}
-
-.social p {
   text-align: center;
-  padding-bottom: 10%;
-  font-size: 40px;
-  color: black;
+  margin-bottom: -0.8%;
 }
 
 .social a {
   text-decoration: none;
+  text-align: center;
 }
 
 .fa-github-square,
@@ -350,7 +343,9 @@ textarea {
 .fa-stack-overflow,
 .fa-medium {
   font-size: 70px;
-  color: black;
+  color: white;
+  margin-left: 1.5%;
+  padding-top: 2%;
 }
 
 .footer-container {
@@ -361,15 +356,16 @@ textarea {
   position: absolute;
   color: black;
   background: #34a58e;
-  height: 40px;
+  height: 90px;
   width: 100%;
   margin-bottom: 0;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .copyright {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 0;
-  padding-top: 4px;
+  font-size: 14px;
+  margin-bottom: -1.5%;
+  text-align: right;
+  margin-right: 1%;
+  color: white;
 }

@@ -22,10 +22,12 @@
       <div class="homepage-content">
         <h1 id="homepage-heading"></h1>
         <div class="scroll-about">
-          <p>
-            <span class="scroll-p">Learn More About Me</span>
-          </p>
-          <i class="fas fa-address-card"></i>
+          <div class="scroll-about-section">
+            <p>
+              <span class="scroll-p">Learn More About Me</span>
+            </p>
+            <i class="fas fa-address-card"></i>
+          </div>
         </div>
 
       </div>
@@ -35,29 +37,15 @@
   <div id="about-full">
     <div class="container-about">
 
-      <section id="about-me" class="col-md-8">
+      <section id="about-me">
 
         <h2>About Me</h2>
 
         <div class="about-content">
 
-          <p id="about-me-first-p">I'm a full stack web developer with a passion for coding, absorbing new skills, and collaborating with other people.
-            I'm looking for challenging, meaningful, and interesting projects that I can contribute to while simultaneously
+          <p id="about-me-first-p">I'm a full-stack web developer with a passion for coding, absorbing new skills, and collaborating with other people.
+            I'm looking for challenging, meaningful, and interesting projects that I can contribute to while continuously
             expanding my skills as a developer.
-          </p>
-
-          <br>
-
-          <p>I previously worked at an e-commerce startup from the ground floor. I started as a Content Writer and transitioned
-            into a management role. I was also responsible for general SEO maintenance including best on-page practices and
-            outreach for off-page SEO.
-          </p>
-
-          <br>
-
-          <p>I taught myself HTML and CSS to publish articles for the company's website. I soon became fascinated with the entire
-            coding process from developing the original idea to the final working product. It was clear to me that my career
-            path should involve coding, and enrolling in Rutgers Coding Bootcamp was the first step to achieve my goal.
           </p>
 
           <br>
@@ -69,28 +57,29 @@
         </div>
 
       </section>
-      <div class="col-md-3">
-        <div class="scroll-container">
 
-          <div class="scroll-section">
+      <div class="scroll-container">
 
-            <div class="scroll-projects">
+        <div class="scroll-section row">
+
+          <div class="scroll-projects col-md-6">
+            <div class="scroll-projects-section">
               <p>See My Work</p>
               <i class="fas fa-desktop"></i>
             </div>
+          </div>
 
-            <div class="scroll-contact">
-              <p>
-                <span class="scroll-p">Get In Touch</span>
-              </p>
+          <div class="scroll-contact col-md-6">
+            <div class="scroll-projects-section">
+              <p>Get In Touch</p>
               <i class="fas fa-envelope"></i>
             </div>
-
           </div>
 
         </div>
 
       </div>
+
     </div>
   </div>
 
@@ -221,47 +210,27 @@
       <div id="contact">
         <div class="container">
 
-          <section id="contact-form" class="col-md-8">
+          <section id="contact-form">
 
             <h2>Contact Me</h2>
 
             <form action="mailto:alex.scarlett91@gmail.com" method="post" enctype="text/plain">
 
               <label id="form-first-label">Name</label>
-              <input class="name-input" type="text" name="name" placeholder="Your Name">
+              <input class="name-input" type="text" name="name" placeholder="Name">
 
               <label class="email-label">Email</label>
-              <input class="email-input" type="text" name="email" placeholder="Your Email">
+              <input class="email-input" type="text" name="email" placeholder="Email">
 
               <label class="form-msg">Message</label>
-              <textarea class="msg-input" type="text" name="message" placeholder="Your Message"></textarea> </textarea>
+              <textarea class="msg-input" type="text" name="message" placeholder="Message"></textarea> </textarea>
 
               <input id="contact-submit-btn" type="submit" value="Submit">
 
             </form>
+
           </section>
 
-          <div class="social col-md-3">
-            <div class="social-container">
-              <p>Connect With Me</p>
-
-              <a href="https://www.github.com/alexscar99" target="_blank">
-                <i class="fab fa-github-square"></i>
-              </a>
-
-              <a href="https://www.linkedin.com/in/alex-scarlett-6a039175/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-              </a>
-
-              <a href="https://stackoverflow.com/users/9246584/alex-scarlett?tab=profile" target="_blank">
-                <i class="fab fa-stack-overflow"></i>
-              </a>
-
-              <a href="https://medium.com/@alexscarlett" target="_blank">
-                <i class="fab fa-medium"></i>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -270,8 +239,26 @@
   <div class="footer-container">
     <footer id="footer">
 
-      <p class="copyright">&copy; Copyright 2018 Alex Scarlett</p>
+      <div class="social">
 
+        <a href="https://www.github.com/alexscar99" target="_blank ">
+          <i class="fab fa-github-square "></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/alex-scarlett-6a039175/" target="_blank ">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://stackoverflow.com/users/9246584/alex-scarlett?tab=profile" target="_blank">
+          <i class="fab fa-stack-overflow "></i>
+        </a>
+
+        <a href="https://medium.com/@alexscarlett" target="_blank">
+          <i class="fab fa-medium"></i>
+        </a>
+
+      </div>
+      <p class="copyright">&copy; Copyright 2018 Alex Scarlett</p>
     </footer>
   </div>
 

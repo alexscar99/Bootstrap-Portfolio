@@ -2,12 +2,6 @@ $(document).ready(function() {
   // hide landing page text until greeting is displayed
   $('.scroll-about').hide();
 
-  // hide labels for contact form
-  $('label').hide();
-
-  // add margin to input fields in contact form while labels are hidden
-  $('.name-input, .email-input, .msg-input').css('margin', '8% auto');
-
   $(function() {
     var greeting =
       "Hi, I'm Alex Scarlett. A web developer who will build your next project.";
@@ -60,24 +54,5 @@ $(document).ready(function() {
       },
       1500
     );
-  });
-
-  // on click: contact form inputs removing placeholder and fading in a label
-  $('.name-input').click(function() {
-    $(this).attr('placeholder', '');
-    $('#form-first-label').fadeIn(1500);
-    $(this).css('margin', '0 auto');
-  });
-
-  $('.email-input').click(function() {
-    $(this).attr('placeholder', '');
-    $('.email-label').fadeIn(1500);
-    $(this).css('margin', '0 auto');
-  });
-
-  $('.msg-input').click(function() {
-    $(this).attr('placeholder', '');
-    $('.form-msg').fadeIn(1500);
-    $(this).css('margin', '0 auto');
   });
 });
