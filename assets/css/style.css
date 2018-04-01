@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-height: 100%;
   width: 100%;
   font-size: 16px;
@@ -32,7 +32,6 @@ h2 {
   margin: 20px 0;
   font-size: 36px;
   display: inline;
-  letter-spacing: 1.5px;
 }
 
 h3 {
@@ -82,11 +81,11 @@ p {
 
 .homepage-content {
   text-align: center;
-  padding: 180px 0;
+  padding: 15% 0;
 }
 
-.homepage-content h1 {
-  font-size: 50px;
+#homepage-heading {
+  font-size: 55px;
   line-height: 70px;
   color: black;
   font-weight: bolder;
@@ -101,11 +100,6 @@ p {
 .scroll-about {
   color: black;
   padding-top: 8%;
-}
-
-.scroll-about-section:hover {
-  cursor: pointer;
-  color: #bc1212;
 }
 
 .fa-address-card,
@@ -126,12 +120,6 @@ p {
   color: black;
 }
 
-#about-me-first-p,
-#portfolio-first-row,
-#contact-form #form-first-label {
-  margin-top: 34px;
-}
-
 .container-about,
 .container-contact {
   width: 80%;
@@ -147,25 +135,21 @@ p {
   padding: 75px;
 }
 
-#about-me,
-#contact-form {
+#about-me {
   position: relative;
   border-radius: 10px;
   text-align: center;
   border: 3px solid black;
   padding: 32px;
-  margin: 6% auto;
-}
-
-#about-me {
+  margin: auto;
   background: white;
-  box-shadow: 3px 2px 20px 2px #34a58e;
-  margin: 0 auto;
+  box-shadow: 5px 5px 20px 1px #34a58e;
 }
 
 #about-me p {
   color: black;
   font-size: 25px;
+  padding-top: 3%;
 }
 
 #about-me h2 {
@@ -189,16 +173,21 @@ p {
   display: block;
 }
 
+.scroll-about-section:hover,
 .scroll-contact-section:hover,
 .scroll-projects-section:hover {
   cursor: pointer;
   color: #34a58e;
+  animation: pulse 0.3s linear 1;
+  -webkit-animation: pulse 0.3s linear 1;
+  -o-animation: pulse 0.3s linear 1;
+  -moz-animation: pulse 0.3s linear 1;
 }
 
 .scroll-contact,
 .scroll-projects {
   text-align: center;
-  padding: 100px 0;
+  padding: 8% 0;
 }
 
 .scroll-contact p,
@@ -223,7 +212,7 @@ p {
 }
 
 #portfolio .container {
-  padding-top: 50px;
+  padding-top: 4.5%;
 }
 
 #portfolio h2 {
@@ -237,7 +226,6 @@ p {
   font-weight: bold;
   margin-bottom: 5%;
   color: black;
-  letter-spacing: 1px;
 }
 
 .first-portfolio {
@@ -262,70 +250,70 @@ p {
 }
 
 #contact-form {
-  margin: 3% auto;
-  margin-bottom: 0;
-  width: 70%;
-  background: black;
-  padding: 25px;
   border: 2px solid white;
-  box-shadow: 5px 5px 20px 5px black;
+  width: 65%;
+  height: 90vh;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 7px 12px 20px 5px black;
+  padding: 35px 45px;
+  position: relative;
+  margin: 3.5% auto;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #contact-form h2 {
-  margin-bottom: 20px;
+  color: #34a58e;
+  margin: 2% 0;
+  padding-bottom: 2%;
+  width: 35%;
+  border-bottom: 3px solid #34a58e;
   font-size: 45px;
-  color: #34a58e;
-  text-align: center;
-  display: block;
 }
 
-#contact-form label {
-  display: block;
-  font-size: 24px;
-  letter-spacing: 1px;
-  color: #34a58e;
+#contact-form .form-first-p {
+  margin: 9% 0 3% 0;
 }
 
-#contact-form input,
-textarea {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  border: 3px solid #34a58e;
-  border-radius: 12px;
-  background-color: #f8f8f8;
-  font-size: 18px;
-  resize: none;
-  display: block;
-}
-
-#contact-form #contact-submit-btn {
+#contact-form button {
+  float: right;
+  padding: 2.5%;
+  margin: 3% 0;
+  border: 2px solid white;
+  background: 0;
+  color: white;
   background: #34a58e;
-  color: black;
-  width: 120px;
-  border-radius: 12px;
-  border: none;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 22px;
-  letter-spacing: 1px;
-  margin: 35px auto 5px auto;
-  padding-left: 20px;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+#contact-form button:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
 }
 
-#contact-form textarea {
-  height: 150px;
+#contact-form p {
+  display: block;
+  margin: 3% 0;
+  font-size: 24px;
+  color: #34a58e;
 }
 
-#contact-form label.form-msg {
-  margin-right: 67%;
+#contact-form input {
+  border-bottom: 3px solid white;
+  background: black;
+  width: 40%;
+  margin: 3% auto;
+  text-align: center;
 }
 
-#form-first-label,
-.email-label,
-.form-msg {
-  margin: 2% 72% 2% auto;
+::placeholder {
+  color: white;
+  opacity: 0.5;
 }
 
 .social {
@@ -368,4 +356,31 @@ textarea {
   text-align: right;
   margin-right: 1%;
   color: white;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    transform: scale(0.8);
+  }
+}
+@-moz-keyframes pulse {
+  50% {
+    transform: scale(0.8);
+  }
+}
+@-o-keyframes pulse {
+  50% {
+    transform: scale(0.8);
+  }
+}
+@keyframes pulse {
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(0.8);
+  }
 }
