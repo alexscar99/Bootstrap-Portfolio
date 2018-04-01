@@ -203,7 +203,8 @@ p {
   text-align: center;
   margin: auto;
   width: 100%;
-  background: #34a58e;
+  background: rgb(53, 165, 142);
+  background: rgba(53, 165, 142, 0.85);
 }
 
 #portfolio .row {
