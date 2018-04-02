@@ -403,7 +403,7 @@ p {
   }
 
   .homepage-content {
-    padding: 5% 0;
+    padding: 22% 0;
   }
 
   #homepage-heading {
@@ -413,10 +413,6 @@ p {
 
   .scroll-about {
     padding-top: 0;
-  }
-
-  .scroll-about p {
-    padding-top: 50%;
   }
 
   .container-about {
