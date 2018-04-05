@@ -284,12 +284,13 @@ p {
   border: 2px solid white;
   background: 0;
   color: white;
+  width: 28%;
   background: #34a58e;
   cursor: pointer;
   border-radius: 10px;
   font-weight: bold;
 }
-#contact-form button:hover {
+#contact-form .submit-btn:hover {
   background: white;
   color: black;
 }
