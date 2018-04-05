@@ -277,7 +277,7 @@ p {
   margin: 7% 0 3% 0;
 }
 
-#contact-form button {
+#contact-form .submit-btn {
   float: right;
   padding: 2.5%;
   margin: 5% 0;
