@@ -19,14 +19,14 @@ $(document).ready(function() {
       lettersArray[counter]
         .appendTo(greetingLocation)
         .hide()
-        .fadeIn(90);
+        .fadeIn(70);
       counter += 1;
 
       if (counter === lettersArray.length) {
         clearInterval(i);
         $('.scroll-about').fadeIn(1500);
       }
-    }, 90);
+    }, 70);
   });
 
   // ON CLICK SCROLLING
