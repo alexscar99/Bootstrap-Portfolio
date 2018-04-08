@@ -50,8 +50,12 @@ p {
   font-size: 22px;
 }
 
+form {
+  margin-left: -4%;
+}
+
 #homepage-full,
-#about-full,
+#stack-full,
 #contact-full {
   height: 100vh;
   position: relative;
@@ -70,10 +74,6 @@ p {
   -o-background-size: cover;
 }
 
-#about-full {
-  background: black;
-}
-
 .homepage-container {
   margin: auto;
   width: 70%;
@@ -89,15 +89,20 @@ p {
   line-height: 70px;
   color: black;
   font-weight: bolder;
-  padding-bottom: 25%;
+  padding-bottom: 15%;
 }
 
 .scroll-about p {
   font-size: 25px;
   font-weight: bold;
+  color: #bc1212;
 }
 
-.fa-address-card,
+.fa-long-arrow-alt-down {
+  color: #bc1212;
+}
+
+.fa-long-arrow-alt-down,
 .fa-github-square,
 .fa-linkedin,
 .fa-stack-overflow,
@@ -115,67 +120,93 @@ p {
   color: black;
 }
 
-.container-about,
-.container-contact {
-  width: 80%;
-  margin: auto;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 100vh;
+#stack-full {
+  height: 80vh;
 }
 
-.container-about {
-  padding: 75px;
+#about-me,
+#expertise {
+  position: relative;
+  text-align: center;
 }
 
 #about-me {
-  position: relative;
-  border-radius: 10px;
-  text-align: center;
-  border: 2px solid black;
-  padding: 3.25%;
-  margin: auto;
+  padding: 3%;
+  border: 4px solid #35a58e;
+  border-radius: 12px;
+  /* box-shadow: 3px 3px 8px 2px #35a58e; */
+  margin: 10% auto;
+  display: block;
   background: white;
-  box-shadow: 5px 5px 20px 1px #34a58e;
 }
 
-#about-me-first-p {
-  padding-top: 3%;
-}
-
-#about-me p {
-  color: black;
-  font-size: 25px;
+#about-me .about-me-header {
+  font-size: 30px;
+  color: #35a58e;
 }
 
 #about-me h2 {
-  color: #34a58e;
+  font-size: 30px;
+  color: #35a58e;
+}
+
+#expertise {
+  padding: 4%;
+}
+
+.expertise-content {
+  margin-top: 8%;
+}
+
+#expertise h2 {
+  font-size: 42px;
+  font-family: 'Roboto Mono', sans-serif;
+  text-shadow: 2px 2px 8px #666;
+  padding-bottom: 1%;
+  border-bottom: 3px solid;
+}
+
+.brick-row,
+.brick-row-thirds {
+  position: relative;
+  display: inline-block;
+  background: #9b0000;
+  color: white;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 26px;
+  margin: 0.2% auto;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.brick-row {
+  width: 24.6%;
+}
+
+.brick-row-thirds {
+  width: 32.9%;
 }
 
 .scroll-container {
   margin: 0 auto;
   display: block;
+  visibility: hidden;
 }
 
-.scroll-section {
-  color: white;
-}
-
-.scroll-about-section,
 .scroll-contact-section,
 .scroll-projects-section {
-  width: 40%;
-  margin: 0 auto;
-  display: block;
+  width: 20%;
+}
+
+.scroll-projects-section {
+  float: right;
 }
 
 .scroll-about-section:hover,
 .scroll-contact-section:hover,
 .scroll-projects-section:hover {
   cursor: pointer;
-  color: #34a58e;
+  color: black;
   animation: pulse 0.3s linear 1;
   -webkit-animation: pulse 0.3s linear 1;
   -o-animation: pulse 0.3s linear 1;
@@ -185,13 +216,7 @@ p {
 .scroll-contact,
 .scroll-projects {
   text-align: center;
-  padding: 8% 0;
-}
-
-.scroll-contact p,
-.scroll-projects p {
-  font-size: 32px;
-  font-weight: bold;
+  padding: 55% 0;
 }
 
 #portfolio {
@@ -250,7 +275,7 @@ p {
 
 #contact-form {
   border: 2px solid white;
-  width: 65%;
+  width: 85%;
   height: 90vh;
   background: black;
   border-radius: 10px;
@@ -265,27 +290,42 @@ p {
 }
 
 #contact-form h2 {
-  color: #34a58e;
+  color: #35a58e;
   margin: 2% 0;
   padding-bottom: 2%;
   width: 35%;
-  border-bottom: 3px solid #34a58e;
+  border-bottom: 3px solid #35a58e;
   font-size: 45px;
 }
 
-#contact-form .form-first-p {
-  margin: 7% 0 3% 0;
+#contact-form form {
+  padding-left: 0;
 }
 
-#contact-form .submit-btn {
+#contact-form .vertical-line {
+  border-left: 6px solid white;
+  height: 80vh;
+  margin-left: 3%;
+}
+
+#contact-form .about-content p {
+  font-size: 18px;
+  padding-top: 15%;
+  color: black;
+}
+
+#contact-form .form-first-p {
+  margin: 12% 0 4% 0;
+}
+
+#contact-form form .submit-btn {
   float: right;
   padding: 2.5%;
-  margin: 5% 0;
+  margin: 20% 0 14% 3%;
   border: 2px solid white;
-  background: 0;
   color: white;
   width: 28%;
-  background: #34a58e;
+  background: #35a58e;
   cursor: pointer;
   border-radius: 10px;
   font-weight: bold;
@@ -295,23 +335,20 @@ p {
   color: black;
 }
 
-#contact-form p {
-  display: block;
-  margin: 3% 0;
-  font-size: 24px;
-  color: #34a58e;
-}
-
 #contact-form input {
   border-bottom: 3px solid white;
   background: black;
-  width: 33%;
-  margin: 3% auto;
+  width: 45%;
   text-align: center;
+  font-size: 18px;
+}
+
+#contact-form form p {
+  margin: 8% auto 7%;
 }
 
 .form-textarea {
-  width: 70%;
+  width: 80%;
   height: 120px;
   background: black;
   color: white;
@@ -355,8 +392,7 @@ p {
 
 #footer {
   position: absolute;
-  color: black;
-  background: #34a58e;
+  background: #35a58e;
   height: 90px;
   width: 100%;
   margin-bottom: 0;
@@ -428,12 +464,6 @@ p {
   .scroll-contact,
   .scroll-projects {
     padding: 8% 15%;
-    float: left;
-  }
-
-  .scroll-contact-section,
-  .scroll-projects-section {
-    width: 100%;
   }
 
   #portfolio h3 {
@@ -471,10 +501,6 @@ p {
     padding-bottom: 10%;
     font-size: 50px;
     line-height: 60px;
-  }
-
-  .scroll-about-section {
-    width: 80%;
   }
 
   .scroll-about p {

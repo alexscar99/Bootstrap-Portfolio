@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Roboto+Mono">
   <script type=" text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
     crossorigin="anonymous"></script>
@@ -24,9 +24,9 @@
         <div class="scroll-about">
           <div class="scroll-about-section">
             <p>
-              <span class="scroll-p">Learn More About Me</span>
+              <span class="scroll-p">Learn More</span>
             </p>
-            <i class="fas fa-address-card"></i>
+            <i class="fas fa-long-arrow-alt-down"></i>
           </div>
         </div>
 
@@ -34,53 +34,49 @@
     </div>
   </div>
 
-  <div id="about-full">
-    <div class="container-about">
+  <div id="stack-full">
+    <div class="container">
+      <div class="row">
+        <section id="expertise">
 
-      <section id="about-me">
+          <h2>Stacking My Skills</h2>
 
-        <h2>About Me</h2>
+          <div class="expertise-content">
 
-        <div class="about-content">
-
-          <p id="about-me-first-p">I'm a full-stack web developer with a passion for coding, a devotion to improvement, and a goal to collaborate
-            with other creative minds. I'm looking for challenging, meaningful, and interesting projects that I can design
-            and develop.
-          </p>
-
-          <br>
-
-          <p>I bring to any endeavor absolute dedication, a flexible mindset for ensuring a project's success, and the ability
-            to turn your vision into a finished product we can both take pride in.
-          </p>
-
-        </div>
-
-      </section>
-
-      <div class="scroll-container">
-
-        <div class="scroll-section row">
-
-          <div class="scroll-projects col-md-6">
-            <div class="scroll-projects-section">
-              <p>See My Work</p>
-              <i class="fas fa-desktop"></i>
+            <div class="row">
+              <div class="brick-row">HTML</div>
+              <div class="brick-row">CSS</div>
+              <div class="brick-row">jQuery</div>
+              <div class="brick-row">JavaScript</div>
             </div>
-          </div>
 
-          <div class="scroll-contact col-md-6">
-            <div class="scroll-projects-section">
-              <p>Get In Touch</p>
-              <i class="fas fa-envelope"></i>
+            <div class="row">
+
+              <div class="brick-row-thirds">MySQL</div>
+              <div class="brick-row-thirds">Java</div>
+              <div class="brick-row-thirds">Solidity</div>
             </div>
-          </div>
 
-        </div>
+            <div class="row">
+              <div class="brick-row">MongoDB</div>
+              <div class="brick-row">Express</div>
+              <div class="brick-row">React</div>
+              <div class="brick-row">Node</div>
+            </div>
+
+            <div class="row">
+              <div class="brick-row-thirds">Mongoose</div>
+              <div class="brick-row-thirds">Handlebars</div>
+              <div class="brick-row-thirds">Firebase</div>
+            </div>
+
+          </div>
+        </section>
 
       </div>
-
     </div>
+  </div>
+
   </div>
 
   <div id="portfolio">
@@ -210,10 +206,10 @@
       <div id="contact">
         <div class="container">
 
-          <section id="contact-form">
+          <section id="contact-form" class="row">
 
-            <form method="post" name="myemailform" action="form-to-email.php">
-              <h2>CONTACT ME</h2>
+            <form method="post" name="myemailform" action="form-to-email.php" class="col-md-6">
+              <h2>CONTACT</h2>
               <p class="form-first-p">Name</p>
               <input class="name-input" type="text" name="name" placeholder="What's your name?">
 
@@ -227,12 +223,28 @@
 
               <br>
 
-              <input class="submit-btn" type="submit" value="Send Message">
+              <input class="submit-btn" type="submit" value="Submit">
 
             </form>
 
-          </section>
+            <div class="col-md-1 vertical-line"></div>
 
+            <section id="about-me" class="col-md-5">
+
+              <h2 class="about-me-header">ABOUT</h2>
+
+              <div class="about-content">
+
+                <p>I'm a full-stack web developer with a passion for coding and a desire to collaborate with other creative
+                  minds. I'm looking for challenging, meaningful, and interesting projects that I can design and develop.
+                  Let me turn your vision into a finished product we can both be proud of.
+                </p>
+
+              </div>
+
+            </section>
+
+          </section>
         </div>
       </div>
     </div>

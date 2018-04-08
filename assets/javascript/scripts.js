@@ -24,37 +24,21 @@ $(document).ready(function() {
 
       if (counter === lettersArray.length) {
         clearInterval(i);
-        $('.scroll-about').fadeIn(1500);
+        $('.scroll-about').fadeIn(2000);
+        $('.scroll-about-section').css('width', '20%');
+        $('.scroll-about-section').css('margin', '0 auto');
       }
     }, 70);
   });
 
-  // ON CLICK SCROLLING
+  // SCROLL TO STACK
 
   $('.scroll-about').click(function() {
     $('html, body').animate(
       {
-        scrollTop: $('#about-full').offset().top
+        scrollTop: $('#stack-full').offset().top
       },
       1000
-    );
-  });
-
-  $('.scroll-projects').click(function() {
-    $('html, body').animate(
-      {
-        scrollTop: $('#portfolio').offset().top
-      },
-      1000
-    );
-  });
-
-  $('.scroll-contact').click(function() {
-    $('html, body').animate(
-      {
-        scrollTop: $('#contact').offset().top
-      },
-      1500
     );
   });
 
@@ -63,7 +47,7 @@ $(document).ready(function() {
   $('.form-textarea').hide();
 
   $('.email-input').click(function() {
-    $(this).animate({ width: '47.5%' }, 500);
+    $(this).animate({ width: '60%' }, 500);
   });
 
   $('.form-msg-input').click(function() {
@@ -73,14 +57,7 @@ $(document).ready(function() {
 
     $('.form-textarea').animate({ borderWidth: '3px' }, 500);
 
-    $('#contact-form p, #contact-form input, .form-textarea').css(
-      'margin',
-      '2% auto'
-    );
-
-    $('#contact-form .form-first-p').css('margin-top', '7%');
-
-    $('#contact-form button').css('margin', '2.5% auto');
+    $('#contact-form form .submit-btn').css('margin-top', '6%');
 
     $('.form-textarea').focus();
   });
@@ -91,7 +68,7 @@ $(document).ready(function() {
     $(window).keyup(function(event) {
       var code = event.keyCode || event.which;
       if (code == 9) {
-        $('.email-input').animate({ width: '47.5%' }, 500);
+        $('.email-input').animate({ width: '60%' }, 500);
       }
     });
   });
@@ -106,14 +83,7 @@ $(document).ready(function() {
 
         $('.form-textarea').animate({ borderWidth: '3px' }, 500);
 
-        $('#contact-form p, #contact-form input, .form-textarea').css(
-          'margin',
-          '2% auto'
-        );
-
-        $('#contact-form .form-first-p').css('margin-top', '7%');
-
-        $('#contact-form button').css('margin', '2.5% auto');
+        $('#contact-form form .submit-btn').css('margin-top', '6%');
 
         $('.form-textarea').focus();
       }
