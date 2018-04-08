@@ -170,13 +170,28 @@ form {
 .brick-row-thirds {
   position: relative;
   display: inline-block;
-  background: #9b0000;
-  color: white;
   padding: 2%;
   font-weight: bold;
   font-size: 26px;
   margin: 0.2% auto;
   font-family: 'Roboto Mono', sans-serif;
+}
+
+.brick-pattern-one,
+.brick-pattern-two {
+  color: #feffdb;
+}
+
+.brick-pattern-one {
+  background: url('../imgs/brick-background.jpg') top center repeat-y;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.brick-pattern-two {
+  background: url('../imgs/brick-bg2.jpg') top center repeat-y;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .brick-row {
