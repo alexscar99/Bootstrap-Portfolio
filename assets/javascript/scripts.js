@@ -24,9 +24,7 @@ $(document).ready(function() {
 
       if (counter === lettersArray.length) {
         clearInterval(i);
-        $('.scroll-about').fadeIn(2000);
-        $('.scroll-about-section').css('width', '20%');
-        $('.scroll-about-section').css('margin', '0 auto');
+        $('.scroll-about').fadeIn(1500);
       }
     }, 70);
   });
@@ -38,7 +36,7 @@ $(document).ready(function() {
       {
         scrollTop: $('#stack-full').offset().top
       },
-      1000
+      650
     );
   });
 
