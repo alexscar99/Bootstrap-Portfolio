@@ -36,7 +36,7 @@ h2 {
 
 h3 {
   font-size: 22px;
-  margin-top: 14px;
+  margin-top: 0;
 }
 
 hr {
@@ -64,6 +64,26 @@ form {
   width: 100%;
   min-height: 350px;
   display: block;
+}
+
+.divider {
+  height: 50px;
+  background: #7c7c7c;
+}
+
+.divider:after {
+  display: block;
+  position: absolute;
+  content: '';
+  left: 50%;
+  width: 50px;
+  height: 40px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  bottom: -15px;
+  z-index: 10;
+  background: inherit;
+  box-shadow: -50px 50px 0 #7c7c7c, 50px -50px 0 #7c7c7c;
 }
 
 #homepage-full {
@@ -122,8 +142,6 @@ form {
 
 .scroll-about-section:hover {
   cursor: pointer;
-  /* color: rgba(188, 18, 18, 0.5);
-  border-color: rgba(188, 18, 18, 0.5); */
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.5);
 }
@@ -220,54 +238,54 @@ form {
   text-align: center;
   margin: auto;
   width: 100%;
-  background: rgb(53, 165, 142);
-  background: rgba(53, 165, 142, 0.85);
-}
-
-#portfolio .row {
-  margin: 5% 0;
-}
-
-#portfolio .row p {
-  color: #def2f1;
-}
-
-#portfolio .container {
-  padding-top: 4.5%;
+  padding-top: 6%;
 }
 
 #portfolio h2 {
-  color: #def2f1;
-  font-size: 60px;
-  font-weight: bold;
+  color: #067bc2;
+  font-size: 42px;
+  padding-bottom: 1%;
+  text-shadow: 2px 2px 8px #999;
+  border-bottom: 3px solid;
 }
 
 #portfolio h3 {
-  font-size: 35px;
   font-weight: bold;
-  margin-bottom: 5%;
-  color: black;
+  color: #e76f51;
+  font-size: 26px;
 }
 
-.first-portfolio {
-  margin-top: 5%;
+.row-container {
+  padding-top: 4%;
+}
+
+.portfolio-last-row {
+  padding-bottom: 4%;
 }
 
 .portfolio-paragraph {
-  color: black;
-  padding: 8% 0;
+  padding: 0 4%;
+  opacity: 0.06;
+}
+
+.portfolio-paragraph p {
+  color: #067bc2;
+  font-size: 18px;
+  line-height: 1.4em;
+  padding-top: 3%;
 }
 
 .portfolio-img img {
-  height: 300px;
-  width: 400px;
-  border: 3px solid #def2f1;
-  border-radius: 12px;
+  height: 35vh;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 #contact {
   position: relative;
   background: white;
+  padding-top: 3%;
 }
 
 #contact-form {
@@ -393,7 +411,7 @@ form {
   height: 90px;
   width: 100%;
   margin-bottom: 0;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
 .copyright {

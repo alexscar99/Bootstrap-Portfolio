@@ -40,6 +40,56 @@ $(document).ready(function() {
     );
   });
 
+  // PORTFOLIO
+
+  $('.project-one-img').mouseover(function() {
+    $('.project-one-p').fadeTo(800, 1);
+  });
+
+  $('.project-one-img').mouseout(function() {
+    $('.project-one-p').fadeTo(500, 0.1);
+  });
+
+  $('.project-two-img').mouseover(function() {
+    $('.project-two-p').fadeTo(800, 1);
+  });
+
+  $('.project-two-img').mouseout(function() {
+    $('.project-two-p').fadeTo(500, 0.1);
+  });
+
+  $('.project-three-img').mouseover(function() {
+    $('.project-three-p').fadeTo(800, 1);
+  });
+
+  $('.project-three-img').mouseout(function() {
+    $('.project-three-p').fadeTo(500, 0.1);
+  });
+
+  $('.project-four-img').mouseover(function() {
+    $('.project-four-p').fadeTo(800, 1);
+  });
+
+  $('.project-four-img').mouseout(function() {
+    $('.project-four-p').fadeTo(500, 0.1);
+  });
+
+  $('.project-five-img').mouseover(function() {
+    $('.project-five-p').fadeTo(800, 1);
+  });
+
+  $('.project-five-img').mouseout(function() {
+    $('.project-five-p').fadeTo(500, 0.1);
+  });
+
+  $('.project-six-img').mouseover(function() {
+    $('.project-six-p').fadeTo(800, 1);
+  });
+
+  $('.project-six-img').mouseout(function() {
+    $('.project-six-p').fadeTo(500, 0.1);
+  });
+
   // CONTACT FORM
 
   $('.form-textarea').hide();
