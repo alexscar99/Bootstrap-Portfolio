@@ -3,31 +3,29 @@ $(document).ready(function() {
 
   $('.scroll-about').hide();
 
-  $(function() {
-    var greeting =
-      "Hi, I'm Alex Scarlett. A web developer who will build your next project.";
+  var greeting =
+    "Hi, I'm Alex Scarlett. A web developer who will build your next project.";
 
-    var lettersArray = jQuery.map(greeting.split(''), function(letter) {
-      return $('<span>' + letter + '</span>');
-    });
-
-    var greetingLocation = $('#homepage-heading');
-
-    // counter and interval to populate each letter
-    var counter = 0;
-    var i = setInterval(function() {
-      lettersArray[counter]
-        .appendTo(greetingLocation)
-        .hide()
-        .fadeIn(70);
-      counter += 1;
-
-      if (counter === lettersArray.length) {
-        clearInterval(i);
-        $('.scroll-about').fadeIn(1500);
-      }
-    }, 70);
+  var lettersArray = jQuery.map(greeting.split(''), function(letter) {
+    return $('<span>' + letter + '</span>');
   });
+
+  var greetingLocation = $('#homepage-heading');
+
+  // counter and interval to populate each letter
+  var counter = 0;
+  var i = setInterval(function() {
+    lettersArray[counter]
+      .appendTo(greetingLocation)
+      .hide()
+      .fadeIn(70);
+    counter += 1;
+
+    if (counter === lettersArray.length) {
+      clearInterval(i);
+      $('.scroll-about').fadeIn(1500);
+    }
+  }, 70);
 
   // SCROLL TO STACK
 
