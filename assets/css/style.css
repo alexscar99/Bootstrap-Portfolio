@@ -83,7 +83,6 @@ form {
   bottom: -15px;
   z-index: 10;
   background: inherit;
-  box-shadow: -50px 50px 0 #e5e5e5, 50px -50px 0 #e5e5e5;
 }
 
 #homepage-full {
@@ -110,21 +109,6 @@ form {
   color: black;
   font-weight: bolder;
   padding-bottom: 26%;
-}
-
-.fa-github-square,
-.fa-linkedin,
-.fa-stack-overflow,
-.fa-medium {
-  padding-top: 15px;
-  font-size: 70px;
-}
-
-.fa-github-square:hover,
-.fa-linkedin:hover,
-.fa-stack-overflow:hover,
-.fa-medium:hover {
-  color: black;
 }
 
 .scroll-about-section {
@@ -156,32 +140,17 @@ form {
   text-align: center;
 }
 
-#about-me {
-  padding: 3%;
-  border: 4px solid #35a58e;
-  border-radius: 12px;
-  /* box-shadow: 3px 3px 8px 2px #35a58e; */
-  margin: 10% auto;
-  display: block;
-  background: white;
-}
-
-#about-me .about-me-header {
-  font-size: 30px;
-  color: #35a58e;
-}
-
-#about-me h2 {
-  font-size: 30px;
-  color: #35a58e;
-}
-
 #expertise {
   padding: 4%;
 }
 
 .expertise-content {
   margin-top: 8%;
+  padding-left: 1%;
+}
+
+.expertise-content .row {
+  background: #dbdbdb;
 }
 
 #expertise h2 {
@@ -190,10 +159,11 @@ form {
   text-shadow: 2px 2px 8px #666;
   padding-bottom: 1%;
   border-bottom: 3px solid;
+  color: #067bc2;
 }
 
-.brick-row,
-.brick-row-thirds {
+.brick,
+.small-brick {
   position: relative;
   display: inline-block;
   padding: 2%;
@@ -205,11 +175,11 @@ form {
 
 .brick-pattern-one,
 .brick-pattern-two {
-  color: #feffdb;
+  color: white;
 }
 
 .brick-pattern-one {
-  background: url('../imgs/brick-background.jpg') top center repeat-y;
+  background: url('../imgs/brick-bg.jpg') top center repeat-y;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -220,12 +190,15 @@ form {
   background-position: 50% 50%;
 }
 
-.brick-row {
+.brick {
   width: 24.6%;
 }
 
-.brick-row-thirds {
-  width: 32.9%;
+.small-brick {
+  width: 12.15%;
+  font-size: 13px;
+  padding-top: 3.35%;
+  padding-bottom: 2.4%;
 }
 
 .scroll-contact,
@@ -242,7 +215,7 @@ form {
 }
 
 #portfolio h2 {
-  color: #067bc2;
+  color: #e76f51;
   font-size: 42px;
   padding-bottom: 1%;
   text-shadow: 2px 2px 8px #999;
@@ -251,7 +224,7 @@ form {
 
 #portfolio h3 {
   font-weight: bold;
-  color: #e76f51;
+  color: #067bc2;
   font-size: 26px;
 }
 
@@ -269,17 +242,79 @@ form {
 }
 
 .portfolio-paragraph p {
-  color: #067bc2;
+  color: #e76f51;
   font-size: 18px;
   line-height: 1.4em;
   padding-top: 3%;
 }
 
-.portfolio-img img {
+.project-one-img {
+  position: relative;
+  background: url('../imgs/vybe-app.png');
+  height: 35vh;
+  width: 100%;
+  background-size: 100% 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.project-two-img {
+  position: relative;
+  background: url('../imgs/hangman-game.png');
+  background-size: 100% 100%;
   height: 35vh;
   width: 100%;
   border: 2px solid black;
   border-radius: 5px;
+}
+
+.project-three-img {
+  position: relative;
+  background: url('../imgs/crystal-collector.png');
+  background-size: 100% 100%;
+  height: 35vh;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.project-four-img {
+  position: relative;
+  background: url('../imgs/trivia-game.png');
+  background-size: 100% 100%;
+  height: 35vh;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.project-five-img {
+  position: relative;
+  background: url('../imgs/dynamic-gif.png');
+  background-size: 100% 100%;
+  height: 35vh;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.project-six-img {
+  position: relative;
+  background: url('../imgs/placeholder-img5.jpeg');
+  background-size: 100% 100%;
+  height: 35vh;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.img-layer {
+  background-color: rgba(6, 123, 194, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #contact {
@@ -288,86 +323,91 @@ form {
   padding-top: 3%;
 }
 
-#contact-form {
-  border: 2px solid white;
+#contact-content {
+  border: 2px solid #067bc2;
   width: 85%;
   height: 90vh;
-  background: black;
+  background: #f8f8f8;
   border-radius: 10px;
   box-shadow: 7px 12px 20px 5px black;
   padding: 35px 45px;
   position: relative;
   margin: 3.5% auto;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
 
-#contact-form h2 {
-  color: #35a58e;
+#contact-content h2,
+#about-me h2 {
+  color: #067bc2;
   margin: 2% 0;
   padding-bottom: 2%;
   width: 35%;
-  border-bottom: 3px solid #35a58e;
+  border-bottom: 3px solid #067bc2;
   font-size: 45px;
 }
 
-#contact-form form {
+#contact-content form {
   padding-left: 0;
 }
 
-#contact-form .vertical-line {
-  border-left: 1px solid white;
+#contact-content .vertical-line {
+  border-left: 1px solid black;
   height: 80vh;
   margin-left: 3%;
 }
 
-#contact-form .about-content p {
+#contact-content .about-content p {
   font-size: 18px;
   padding-top: 15%;
-  color: black;
 }
 
-#contact-form .form-first-p {
+#contact-content .form-first-p {
   margin: 12% 0 4% 0;
+  color: #e76f51;
 }
 
-#contact-form form .submit-btn {
+#contact-content form .submit-btn {
   float: right;
   padding: 2.5%;
   margin: 20% 0 14% 3%;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #067bc2;
+  color: #f8f8f8;
   width: 28%;
-  background: #35a58e;
+  background: #067bc2;
   cursor: pointer;
   border-radius: 10px;
   font-weight: bold;
 }
-#contact-form .submit-btn:hover {
-  background: white;
-  color: black;
+
+#contact-content .submit-btn:hover {
+  background: #f8f8f8;
+  color: #067bc2;
+  border: 2px solid #067bc2;
 }
 
-#contact-form input {
-  border-bottom: 3px solid white;
-  background: black;
+#contact-content input {
+  border-bottom: 1px solid black;
+  background: #f8f8f8;
+  color: #067bc2;
   width: 45%;
   text-align: center;
   font-size: 18px;
 }
 
-#contact-form form p {
+#contact-content form p {
   margin: 8% auto 7%;
+  color: #e76f51;
 }
 
 .form-textarea {
   width: 80%;
   height: 120px;
-  background: black;
-  color: white;
-  border: 0px solid white;
+  background: #f8f8f8;
+  color: #067bc2;
+  border: 0px solid black;
   margin: 0 auto;
   text-align: center;
   border-radius: 10px;
@@ -377,8 +417,19 @@ form {
 }
 
 ::placeholder {
-  color: white;
+  color: #067bc2;
   opacity: 0.5;
+}
+
+#about-me p {
+  color: #e76f51;
+  font-size: 18px;
+  padding-bottom: 3%;
+  line-height: 1.5em;
+}
+
+#about-me .about-first-p {
+  padding-top: 15%;
 }
 
 .social {
@@ -396,9 +447,15 @@ form {
 .fa-stack-overflow,
 .fa-medium {
   font-size: 70px;
-  color: white;
   margin-left: 1.5%;
-  padding-top: 2%;
+  padding-top: 1.5%;
+}
+
+.fa-github-square:hover,
+.fa-linkedin:hover,
+.fa-stack-overflow:hover,
+.fa-medium:hover {
+  color: #dd8d7a;
 }
 
 .footer-container {
@@ -407,7 +464,7 @@ form {
 
 #footer {
   position: absolute;
-  background: #35a58e;
+  background: #e5e5e5;
   height: 90px;
   width: 100%;
   margin-bottom: 0;
@@ -419,7 +476,7 @@ form {
   margin-bottom: -1.5%;
   text-align: right;
   margin-right: 1%;
-  color: white;
+  color: #067bc2;
 }
 
 @media screen and (max-width: 980px) {
@@ -452,15 +509,15 @@ form {
     padding: 3% 0;
   }
 
-  #contact-form {
+  #contact-content {
     width: 75%;
   }
 
-  #contact-form input {
+  #contact-content input {
     width: 50%;
   }
 
-  #contact-form button {
+  #contact-content button {
     margin: 8% 0;
   }
 }
@@ -481,7 +538,7 @@ form {
     line-height: 60px;
   }
 
-  #contact-form {
+  #contact-content {
     width: 90%;
   }
 }

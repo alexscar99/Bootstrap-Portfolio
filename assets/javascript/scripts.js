@@ -101,9 +101,9 @@ $(document).ready(function() {
 
     $('.form-textarea').fadeIn(500);
 
-    $('.form-textarea').animate({ borderWidth: '3px' }, 500);
+    $('.form-textarea').animate({ borderWidth: '1px' }, 500);
 
-    $('#contact-form form .submit-btn').css('margin-top', '6%');
+    $('#contact-content form .submit-btn').css('margin-top', '6%');
 
     $('.form-textarea').focus();
   });
@@ -127,9 +127,9 @@ $(document).ready(function() {
 
         $('.form-textarea').fadeIn(500);
 
-        $('.form-textarea').animate({ borderWidth: '3px' }, 500);
+        $('.form-textarea').animate({ borderWidth: '1px' }, 500);
 
-        $('#contact-form form .submit-btn').css('margin-top', '6%');
+        $('#contact-content form .submit-btn').css('margin-top', '6%');
 
         $('.form-textarea').focus();
       }
