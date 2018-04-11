@@ -28,23 +28,6 @@ h2 {
   font-weight: bolder;
 }
 
-h2 {
-  margin: 20px 0;
-  font-size: 36px;
-  display: inline;
-}
-
-h3 {
-  font-size: 22px;
-  margin-top: 0;
-}
-
-hr {
-  height: 5px;
-  background: black;
-  border: none;
-}
-
 p {
   line-height: 30px;
   font-size: 22px;
@@ -160,6 +143,7 @@ form {
   padding-bottom: 1%;
   border-bottom: 3px solid;
   color: #067bc2;
+  display: inline;
 }
 
 .brick,
@@ -220,12 +204,14 @@ form {
   padding-bottom: 1%;
   text-shadow: 2px 2px 8px #999;
   border-bottom: 3px solid;
+  display: inline;
 }
 
 #portfolio h3 {
   font-weight: bold;
   color: #067bc2;
   font-size: 26px;
+  margin-top: 0;
 }
 
 .row-container {
@@ -347,6 +333,7 @@ form {
   width: 35%;
   border-bottom: 3px solid #067bc2;
   font-size: 45px;
+  display: inline;
 }
 
 #contact-content form {
