@@ -1,10 +1,9 @@
 $(document).ready(function() {
-  // GREETING SECTION
-
+  // LANDING PAGE
   $('.scroll-about').hide();
 
   var greeting =
-    "Hi, I'm Alex Scarlett. A web developer who will build your next project.";
+    "HI, I'M ALEX SCARLETT. A WEB DEVELOPER WHO WILL BUILD YOUR NEXT PROJECT.";
 
   var lettersArray = jQuery.map(greeting.split(''), function(letter) {
     return $('<span>' + letter + '</span>');
@@ -32,7 +31,7 @@ $(document).ready(function() {
   $('.scroll-about').click(function() {
     $('html, body').animate(
       {
-        scrollTop: $('#stack-full').offset().top
+        scrollTop: $('.divider').offset().top
       },
       650
     );
@@ -40,51 +39,51 @@ $(document).ready(function() {
 
   // PORTFOLIO
 
-  $('.project-one-img').mouseover(function() {
+  $('.project-img-text-one').mouseover(function() {
     $('.project-one-p').fadeTo(800, 1);
   });
 
-  $('.project-one-img').mouseout(function() {
+  $('.project-img-text-one').mouseout(function() {
     $('.project-one-p').fadeTo(500, 0.1);
   });
 
-  $('.project-two-img').mouseover(function() {
+  $('.project-img-text-two').mouseover(function() {
     $('.project-two-p').fadeTo(800, 1);
   });
 
-  $('.project-two-img').mouseout(function() {
+  $('.project-img-text-two').mouseout(function() {
     $('.project-two-p').fadeTo(500, 0.1);
   });
 
-  $('.project-three-img').mouseover(function() {
+  $('.project-img-text-three').mouseover(function() {
     $('.project-three-p').fadeTo(800, 1);
   });
 
-  $('.project-three-img').mouseout(function() {
+  $('.project-img-text-three').mouseout(function() {
     $('.project-three-p').fadeTo(500, 0.1);
   });
 
-  $('.project-four-img').mouseover(function() {
+  $('.project-img-text-four').mouseover(function() {
     $('.project-four-p').fadeTo(800, 1);
   });
 
-  $('.project-four-img').mouseout(function() {
+  $('.project-img-text-four').mouseout(function() {
     $('.project-four-p').fadeTo(500, 0.1);
   });
 
-  $('.project-five-img').mouseover(function() {
+  $('.project-img-text-five').mouseover(function() {
     $('.project-five-p').fadeTo(800, 1);
   });
 
-  $('.project-five-img').mouseout(function() {
+  $('.project-img-text-five').mouseout(function() {
     $('.project-five-p').fadeTo(500, 0.1);
   });
 
-  $('.project-six-img').mouseover(function() {
+  $('.project-img-text-six').mouseover(function() {
     $('.project-six-p').fadeTo(800, 1);
   });
 
-  $('.project-six-img').mouseout(function() {
+  $('.project-img-text-six').mouseout(function() {
     $('.project-six-p').fadeTo(500, 0.1);
   });
 
@@ -108,8 +107,8 @@ $(document).ready(function() {
     $('.form-textarea').focus();
   });
 
-  // if user tabs through the form instead of cicks, make the above
-  // events still trigger and have them focus on textarea after
+  /* if user tabs through the form instead of cicks, make the above
+  events still trigger */
   $('.email-input').on('focus', function(event) {
     $(window).keyup(function(event) {
       var code = event.keyCode || event.which;
