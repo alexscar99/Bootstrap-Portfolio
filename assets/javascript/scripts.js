@@ -39,51 +39,51 @@ $(document).ready(function() {
 
   // PORTFOLIO
 
-  $('.project-img-text-one').mouseover(function() {
+  $('.project-img-text-one h2').mouseover(function() {
     $('.project-one-p').fadeTo(800, 1);
   });
 
-  $('.project-img-text-one').mouseout(function() {
+  $('.project-img-text-one h2').mouseout(function() {
     $('.project-one-p').fadeTo(500, 0.1);
   });
 
-  $('.project-img-text-two').mouseover(function() {
+  $('.project-img-text-two h2').mouseover(function() {
     $('.project-two-p').fadeTo(800, 1);
   });
 
-  $('.project-img-text-two').mouseout(function() {
+  $('.project-img-text-two h2').mouseout(function() {
     $('.project-two-p').fadeTo(500, 0.1);
   });
 
-  $('.project-img-text-three').mouseover(function() {
+  $('.project-img-text-three h2').mouseover(function() {
     $('.project-three-p').fadeTo(800, 1);
   });
 
-  $('.project-img-text-three').mouseout(function() {
+  $('.project-img-text-three h2').mouseout(function() {
     $('.project-three-p').fadeTo(500, 0.1);
   });
 
-  $('.project-img-text-four').mouseover(function() {
+  $('.project-img-text-four h2').mouseover(function() {
     $('.project-four-p').fadeTo(800, 1);
   });
 
-  $('.project-img-text-four').mouseout(function() {
+  $('.project-img-text-four h2').mouseout(function() {
     $('.project-four-p').fadeTo(500, 0.1);
   });
 
-  $('.project-img-text-five').mouseover(function() {
+  $('.project-img-text-five h2').mouseover(function() {
     $('.project-five-p').fadeTo(800, 1);
   });
 
-  $('.project-img-text-five').mouseout(function() {
+  $('.project-img-text-five h2').mouseout(function() {
     $('.project-five-p').fadeTo(500, 0.1);
   });
 
-  $('.project-img-text-six').mouseover(function() {
+  $('.project-img-text-six h2').mouseover(function() {
     $('.project-six-p').fadeTo(800, 1);
   });
 
-  $('.project-img-text-six').mouseout(function() {
+  $('.project-img-text-six h2').mouseout(function() {
     $('.project-six-p').fadeTo(500, 0.1);
   });
 
