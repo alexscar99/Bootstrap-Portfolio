@@ -255,11 +255,10 @@ form {
 .project-first-row h2,
 .project-img-text h2 {
   text-decoration: none;
-  padding-top: 16%;
+  padding-top: 18%;
   margin: 0 auto;
   display: block;
-  font-size: 35px;
-  font-family: 'Rock Salt', cursive;
+  font-size: 42px;
 }
 
 .project-first-row:hover,
