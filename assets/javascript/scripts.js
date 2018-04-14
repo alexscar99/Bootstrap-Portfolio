@@ -2,8 +2,7 @@ $(document).ready(function() {
   // LANDING PAGE
   $('.scroll-about').hide();
 
-  var greeting =
-    "HI, I'M ALEX SCARLETT. A WEB DEVELOPER WHO WILL BUILD YOUR NEXT PROJECT.";
+  var greeting = "HI, I'M ALEX SCARLETT";
 
   var lettersArray = jQuery.map(greeting.split(''), function(letter) {
     return $('<span>' + letter + '</span>');
@@ -17,14 +16,14 @@ $(document).ready(function() {
     lettersArray[counter]
       .appendTo(greetingLocation)
       .hide()
-      .fadeIn(70);
+      .fadeIn(95);
     counter += 1;
 
     if (counter === lettersArray.length) {
       clearInterval(i);
-      $('.scroll-about').fadeIn(1500);
+      $('.scroll-about').fadeIn(1400);
     }
-  }, 70);
+  }, 95);
 
   // SCROLL TO STACK
 

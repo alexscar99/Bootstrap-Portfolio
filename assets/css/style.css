@@ -45,31 +45,8 @@ form {
   font-weight: bold;
 }
 
-.divider {
-  height: 37px;
-  background: #067bc2;
-}
-
-.divider:after {
-  display: block;
-  position: absolute;
-  content: '';
-  left: 49.8%;
-  width: 50px;
-  height: 40px;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
-  bottom: -15px;
-  z-index: 10;
-  background: inherit;
-}
-
-.divider-portfolio {
-  margin-top: 2%;
-}
-
 #homepage-full {
-  background: url('../imgs/coding-bg.png');
+  background: url('../imgs/landing-bg.JPG');
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -82,40 +59,39 @@ form {
 
 .homepage-content {
   text-align: center;
-  padding: 15% 0;
-  margin: auto;
-  width: 70%;
+  padding: 18% 28% 0 0;
+  width: 80%;
 }
 
 #homepage-heading {
-  font-size: 45px;
+  font-size: 55px;
   line-height: 70px;
-  color: black;
+  color: white;
   font-weight: bolder;
-  padding-bottom: 24%;
+  padding-bottom: 38%;
 }
 
 .scroll-about-section {
   margin: 0 auto;
   height: 50px;
   width: 50px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 100% !important;
-  padding-top: 0.75%;
+  padding-top: 1%;
   letter-spacing: normal;
-  color: black;
+  color: white;
   font-size: 30px;
   transition: all 0.5s;
 }
 
 .scroll-about-section:hover {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 #stack-full {
-  height: 80vh;
+  height: 100vh;
 }
 
 #about-me,
@@ -129,12 +105,7 @@ form {
 }
 
 .expertise-content {
-  margin-top: 9%;
-  padding-left: 1%;
-}
-
-.expertise-content .row {
-  background: #c4c4c4;
+  margin-top: 6%;
 }
 
 #expertise h2 {
@@ -145,49 +116,9 @@ form {
   display: inline;
 }
 
-.brick,
-.small-brick {
-  position: relative;
-  display: inline-block;
-  padding: 2%;
-  font-weight: bold;
-  font-size: 26px;
-  margin: 0.2% auto;
-  font-family: 'Rock Salt', cursive;
-}
-
-.brick-pattern-one,
-.brick-pattern-two {
-  color: white;
-}
-
-.brick-pattern-one {
-  background: url('../imgs/brick-bg.jpg') top center repeat-y;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.brick-pattern-two {
-  background: url('../imgs/brick-bg2.jpg') top center repeat-y;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.brick {
-  width: 24.6%;
-}
-
-.small-brick {
-  width: 12.15%;
-  font-size: 13px;
-  padding-top: 3.35%;
-  padding-bottom: 2.4%;
-}
-
-.scroll-contact,
-.scroll-projects {
-  text-align: center;
-  padding: 55% 0;
+.expertise-svg {
+  height: 15vh;
+  margin: 3% auto;
 }
 
 #portfolio {
@@ -195,6 +126,7 @@ form {
   margin: auto;
   width: 100%;
   padding-top: 6%;
+  background: #f5f5f5;
 }
 
 #portfolio h3 {
@@ -263,7 +195,7 @@ form {
 
 .project-first-row:hover,
 .project-img-text:hover {
-  background: rgba(6, 123, 194, 0.8);
+  background: rgba(6, 123, 194, 0.2);
 }
 
 #portfolio a:hover {
