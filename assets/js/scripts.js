@@ -30,7 +30,7 @@ $(document).ready(function() {
   $('.scroll-about').click(function() {
     $('html, body').animate(
       {
-        scrollTop: $('.divider').offset().top
+        scrollTop: $('#stack-full').offset().top
       },
       800
     );
