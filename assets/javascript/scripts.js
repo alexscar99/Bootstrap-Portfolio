@@ -32,7 +32,7 @@ $(document).ready(function() {
       {
         scrollTop: $('.divider').offset().top
       },
-      650
+      800
     );
   });
 
