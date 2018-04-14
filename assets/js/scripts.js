@@ -2,8 +2,6 @@ $(document).ready(function() {
   // LANDING PAGE
   $('.scroll-about').hide();
 
-  $('.submit-msg').hide();
-
   var greeting = "HI, I'M ALEX SCARLETT.";
 
   var lettersArray = jQuery.map(greeting.split(''), function(letter) {
@@ -134,10 +132,5 @@ $(document).ready(function() {
         $('.form-textarea').focus();
       }
     });
-  });
-
-  $('.submit-btn').click(function() {
-    $(this).hide();
-    $('.submit-msg').fadeIn(500);
   });
 });
