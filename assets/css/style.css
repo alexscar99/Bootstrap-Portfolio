@@ -285,7 +285,7 @@ form {
   font-size: 18px;
 }
 
-#contact-content form p {
+#contact-content .form-p {
   margin: 8% auto 7%;
 }
 
@@ -306,6 +306,10 @@ form {
 ::placeholder {
   color: #067bc2;
   opacity: 0.5;
+}
+
+#contact-content .submit-msg {
+  margin: 5%;
 }
 
 #about-me p {
