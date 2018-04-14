@@ -2,7 +2,7 @@ $(document).ready(function() {
   // LANDING PAGE
   $('.scroll-about').hide();
 
-  var greeting = "HI, I'M ALEX SCARLETT";
+  var greeting = "HI, I'M ALEX SCARLETT.";
 
   var lettersArray = jQuery.map(greeting.split(''), function(letter) {
     return $('<span>' + letter + '</span>');
