@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.scroll-about').hide();
 
   // LANDING PAGE TOP GREETING
-  var greetingTop = "HI, I'M ALEX SCARLETT.";
+  var greetingTop = "HI, I'M ALEX SCARLETT";
 
   var greetingTopArray = jQuery.map(greetingTop.split(''), function(letter) {
     return $('<span>' + letter + '</span>');
@@ -22,7 +22,7 @@ $(document).ready(function() {
     if (counterTop === greetingTopArray.length) {
       clearInterval(i);
       // LANDING PAGE BOTTOM GREETING
-      var greetingBottom = "LET'S BUILD YOUR NEXT PROJECT.";
+      var greetingBottom = "LET'S BUILD YOUR NEXT PROJECT";
 
       var greetingBottomArray = jQuery.map(greetingBottom.split(''), function(
         letter
