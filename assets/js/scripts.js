@@ -1,33 +1,57 @@
 $(document).ready(function() {
-  // LANDING PAGE
   $('.scroll-about').hide();
 
-  var greeting = "HI, I'M ALEX SCARLETT.";
+  // LANDING PAGE TOP GREETING
+  var greetingTop = "HI, I'M ALEX SCARLETT.";
 
-  var lettersArray = jQuery.map(greeting.split(''), function(letter) {
+  var greetingTopArray = jQuery.map(greetingTop.split(''), function(letter) {
     return $('<span>' + letter + '</span>');
   });
 
-  var greetingLocation = $('#homepage-heading');
+  var greetingLocationTop = $('#greeting-top');
 
   // counter and interval to populate each letter
-  var counter = 0;
+  var counterTop = 0;
   var i = setInterval(function() {
-    lettersArray[counter]
-      .appendTo(greetingLocation)
+    greetingTopArray[counterTop]
+      .appendTo(greetingLocationTop)
       .hide()
-      .fadeIn(95);
-    counter += 1;
+      .fadeIn(70);
+    counterTop += 1;
 
-    if (counter === lettersArray.length) {
+    if (counterTop === greetingTopArray.length) {
       clearInterval(i);
-      $('.scroll-about').fadeIn(1400);
+      // LANDING PAGE BOTTOM GREETING
+      var greetingBottom = "LET'S BUILD YOUR NEXT PROJECT.";
+
+      var greetingBottomArray = jQuery.map(greetingBottom.split(''), function(
+        letter
+      ) {
+        return $('<span>' + letter + '</span>');
+      });
+
+      var greetingBottomLocation = $('#greeting-bottom');
+
+      // counter and interval to populate each letter
+      var counterBottom = 0;
+      var x = setInterval(function() {
+        greetingBottomArray[counterBottom]
+          .appendTo(greetingBottomLocation)
+          .hide()
+          .fadeIn(70);
+        counterBottom += 1;
+
+        if (counterBottom === greetingBottomArray.length) {
+          clearInterval(x);
+          $('.scroll-about').fadeIn(1500);
+        }
+      }, 70);
     }
-  }, 95);
+  }, 70);
 
   // SCROLL TO STACK
 
-  $('.scroll-about').click(function() {
+  $('.scroll-about .scroll-about-section').click(function() {
     $('html, body').animate(
       {
         scrollTop: $('#stack-full').offset().top
