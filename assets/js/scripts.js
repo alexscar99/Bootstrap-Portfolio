@@ -64,7 +64,7 @@ $(document).ready(function() {
   });
 
   $('.project-img-text-one h2').mouseout(function() {
-    $('.project-one-p').fadeTo(500, 0.1);
+    $('.project-one-p').fadeTo(500, 0.06);
   });
 
   $('.project-img-text-two h2').mouseover(function() {
@@ -72,7 +72,7 @@ $(document).ready(function() {
   });
 
   $('.project-img-text-two h2').mouseout(function() {
-    $('.project-two-p').fadeTo(500, 0.1);
+    $('.project-two-p').fadeTo(500, 0.06);
   });
 
   $('.project-img-text-three h2').mouseover(function() {
@@ -80,7 +80,7 @@ $(document).ready(function() {
   });
 
   $('.project-img-text-three h2').mouseout(function() {
-    $('.project-three-p').fadeTo(500, 0.1);
+    $('.project-three-p').fadeTo(500, 0.06);
   });
 
   $('.project-img-text-four h2').mouseover(function() {
@@ -88,7 +88,7 @@ $(document).ready(function() {
   });
 
   $('.project-img-text-four h2').mouseout(function() {
-    $('.project-four-p').fadeTo(500, 0.1);
+    $('.project-four-p').fadeTo(500, 0.06);
   });
 
   $('.project-img-text-five h2').mouseover(function() {
@@ -96,7 +96,7 @@ $(document).ready(function() {
   });
 
   $('.project-img-text-five h2').mouseout(function() {
-    $('.project-five-p').fadeTo(500, 0.1);
+    $('.project-five-p').fadeTo(500, 0.06);
   });
 
   $('.project-img-text-six h2').mouseover(function() {
@@ -104,7 +104,7 @@ $(document).ready(function() {
   });
 
   $('.project-img-text-six h2').mouseout(function() {
-    $('.project-six-p').fadeTo(500, 0.1);
+    $('.project-six-p').fadeTo(500, 0.06);
   });
 
   // CONTACT FORM

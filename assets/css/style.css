@@ -191,7 +191,7 @@ form {
 
 .portfolio-paragraph {
   padding: 0 4%;
-  opacity: 0.08;
+  opacity: 0.06;
 }
 
 .portfolio-paragraph p {
@@ -245,11 +245,12 @@ form {
 .project-first-row:active,
 .project-img-text:active,
 .project-img-text:hover,
-.project-img-text:focus {
-  box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3),
+.project-img-text:focus,
+#contact-content .submit-btn:hover {
+  box-shadow: inset 1px 1px 1px black, inset 2px 2px 3px rgba(0, 0, 0, 0.6),
     inset -2px -3px 5px rgba(255, 255, 255, 0);
   background-image: linear-gradient(to bottom right, #bc1212, #d82929);
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 #portfolio a:hover {
@@ -310,22 +311,19 @@ form {
   margin: 12% 0 4% 0;
 }
 
-#contact-content form .submit-btn {
+#contact-content .submit-btn {
   float: right;
   padding: 2.5%;
   margin: 20% 0 14% 3%;
-  border: 2px solid #d11e1e;
+  border: 1px solid rgb(187, 187, 187);
+  background-image: linear-gradient(to bottom right, #a51f1f, #e23131);
+  box-shadow: 1px 1px 1px black, inset 2px 2px 4px rgba(0, 0, 0, 0.5),
+    inset -1px -1px 3px rgba(255, 255, 255, 0.3);
   color: #f8f8f8;
   width: 28%;
-  background: #d11e1e;
   cursor: pointer;
   border-radius: 10px;
   font-weight: bold;
-}
-
-#contact-content .submit-btn:hover {
-  opacity: 0.75;
-  border: 2px solid #920b0b;
 }
 
 #contact-content input {
