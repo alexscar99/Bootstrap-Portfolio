@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  $('.scroll-about').hide();
-
   // LANDING PAGE TOP GREETING
   var greetingTop = "HI, I'M ALEX SCARLETT";
 
@@ -43,7 +41,6 @@ $(document).ready(function() {
 
         if (counterBottom === greetingBottomArray.length) {
           clearInterval(x);
-          $('.scroll-about').fadeIn(1500);
         }
       }, 70);
     }
