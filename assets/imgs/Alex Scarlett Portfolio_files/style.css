@@ -67,7 +67,7 @@ form {
   font-size: 55px;
   line-height: 70px;
   color: white;
-  text-shadow: 4px 2px 5px #000;
+  text-shadow: 0px 0px 12px #000;
   font-weight: bolder;
 }
 
@@ -116,11 +116,11 @@ form {
 }
 
 #expertise {
-  padding: 3%;
+  padding: 5%;
 }
 
 .expertise-content {
-  margin-top: 6%;
+  margin-top: 8%;
 }
 
 #expertise h2 {
@@ -140,22 +140,17 @@ form {
   height: 16vh;
 }
 
-.react-svg {
-  padding-top: 7%;
-  padding-bottom: 4%;
-}
-
 .express-svg {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .node-svg {
-  padding-top: 0;
+  padding-top: 1%;
 }
 
 .firebase-svg {
-  padding: 10%;
-  height: 17vh;
+  padding-right: 10%;
+  height: 18vh;
 }
 
 .expertise-container {
@@ -176,7 +171,7 @@ form {
 
 #portfolio h3 {
   font-weight: bold;
-  color: #f12c2c;
+  color: #067bc2;
   font-size: 26px;
   margin-top: 0;
 }
@@ -191,7 +186,7 @@ form {
 
 .portfolio-paragraph {
   padding: 0 4%;
-  opacity: 0.08;
+  opacity: 0.05;
 }
 
 .portfolio-paragraph p {
@@ -249,7 +244,7 @@ form {
   box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3),
     inset -2px -3px 5px rgba(255, 255, 255, 0);
   background-image: linear-gradient(to bottom right, #bc1212, #d82929);
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 #portfolio a:hover {
@@ -387,7 +382,6 @@ form {
 .fa-stack-overflow,
 .fa-medium {
   font-size: 55px;
-  color: white;
   margin-left: 1.5%;
   padding-top: 1.5%;
 }
@@ -396,7 +390,7 @@ form {
 .fa-linkedin:hover,
 .fa-stack-overflow:hover,
 .fa-medium:hover {
-  color: #999;
+  color: #067bc2;
 }
 
 .footer-container {
@@ -405,8 +399,7 @@ form {
 
 #footer {
   position: absolute;
-  background: black;
-  color: white;
+  background: #e5e5e5;
   height: 70px;
   width: 100%;
   margin-bottom: -1%;
@@ -465,6 +458,10 @@ form {
 
   #portfolio {
     padding-top: 3%;
+  }
+
+  #portfolio h3 {
+    font-size: 22px;
   }
 
   .portfolio-heading h2 {
