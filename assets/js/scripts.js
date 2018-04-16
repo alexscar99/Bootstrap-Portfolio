@@ -1,5 +1,7 @@
 $(document).ready(function() {
   // LANDING PAGE TOP GREETING
+  $('.scroll-about-section').hide();
+
   var greetingTop = "HI, I'M ALEX SCARLETT";
 
   var greetingTopArray = jQuery.map(greetingTop.split(''), function(letter) {
@@ -19,28 +21,53 @@ $(document).ready(function() {
 
     if (counterTop === greetingTopArray.length) {
       clearInterval(i);
-      // LANDING PAGE BOTTOM GREETING
-      var greetingBottom = "LET'S BUILD YOUR NEXT PROJECT";
+      var greetingBottomLeft = 'FULL STACK WEB DEVELOPER';
 
-      var greetingBottomArray = jQuery.map(greetingBottom.split(''), function(
-        letter
-      ) {
-        return $('<span>' + letter + '</span>');
-      });
+      var greetingBottomLeftArray = jQuery.map(
+        greetingBottomLeft.split(''),
+        function(letter) {
+          return $('<span>' + letter + '</span>');
+        }
+      );
 
-      var greetingBottomLocation = $('#greeting-bottom');
+      var greetingBottomLeftLocation = $('#greeting-bottom-left');
 
       // counter and interval to populate each letter
-      var counterBottom = 0;
+      var counterBottomLeft = 0;
       var x = setInterval(function() {
-        greetingBottomArray[counterBottom]
-          .appendTo(greetingBottomLocation)
+        greetingBottomLeftArray[counterBottomLeft]
+          .appendTo(greetingBottomLeftLocation)
           .hide()
           .fadeIn(70);
-        counterBottom += 1;
+        counterBottomLeft += 1;
 
-        if (counterBottom === greetingBottomArray.length) {
+        if (counterBottomLeft === greetingBottomLeftArray.length) {
           clearInterval(x);
+          var greetingBottomRight = "LET'S BUILD YOUR NEXT PROJECT";
+
+          var greetingBottomRightArray = jQuery.map(
+            greetingBottomRight.split(''),
+            function(letter) {
+              return $('<span>' + letter + '</span>');
+            }
+          );
+
+          var greetingBottomRightLocation = $('#greeting-bottom-right');
+
+          // counter and interval to populate each letter
+          var counterBottomRight = 0;
+          var y = setInterval(function() {
+            greetingBottomRightArray[counterBottomRight]
+              .appendTo(greetingBottomRightLocation)
+              .hide()
+              .fadeIn(70);
+            counterBottomRight += 1;
+
+            if (counterBottomRight === greetingBottomRightArray.length) {
+              clearInterval(y);
+              $('.scroll-about-section').fadeIn(1500);
+            }
+          }, 70);
         }
       }, 70);
     }
@@ -53,7 +80,7 @@ $(document).ready(function() {
       {
         scrollTop: $('#stack-full').offset().top
       },
-      800
+      750
     );
   });
 

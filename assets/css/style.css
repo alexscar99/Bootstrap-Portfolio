@@ -46,7 +46,7 @@ form {
 }
 
 #homepage-full {
-  background: url('../imgs/working-bg.jpg');
+  background: url('../imgs/programmer-wp.png');
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
@@ -63,40 +63,42 @@ form {
 }
 
 #greeting-top,
-#greeting-bottom {
-  font-size: 55px;
+#greeting-bottom-left,
+#greeting-bottom-right {
   line-height: 70px;
   color: white;
-  text-shadow: 3px 2px 4px #222;
   font-weight: bolder;
 }
 
 #greeting-top {
-  float: left;
-  padding: 5% 0 26% 3%;
+  font-size: 60px;
+  margin-top: 0;
+  padding: 5% 0 12% 3%;
+  text-shadow: 3px 0 #5ab9f4;
 }
 
-#greeting-bottom {
-  font-size: 40px;
-  width: 40%;
+#greeting-bottom-left,
+#greeting-bottom-right {
+  font-size: 30px;
+  text-shadow: 2px 0 #5ab9f4;
 }
 
-.bottom-section {
-  width: 90%;
+#greeting-bottom-right {
+  float: right;
 }
 
 .scroll-about-section {
-  margin-top: 10%;
-  margin-left: 14%;
-  height: 51px;
-  width: 50px;
+  margin: 13% auto;
+  display: block;
+  height: 40px;
+  width: 40px;
   border: 2px solid white;
   border-radius: 100% !important;
-  padding-top: 0.55%;
-  padding-right: 2.6%;
+  padding: 0.5%;
+  padding-top: 0.45%;
+  padding-right: 0.55%;
   color: white;
-  font-size: 32px;
-  transition: all 0.5s;
+  font-size: 22px;
 }
 
 .scroll-about-section:hover {
@@ -419,9 +421,14 @@ form {
 }
 
 @media screen and (max-width: 992px) {
-  #homepage-heading {
+  #greeting-top {
+    font-size: 50px;
+    padding-bottom: 40%;
+  }
+
+  #greeting-bottom {
     font-size: 35px;
-    padding-bottom: 16%;
+    margin-left: 3%;
   }
 
   .homepage-content {
@@ -429,10 +436,10 @@ form {
   }
 
   .scroll-about-section {
-    height: 35px;
-    width: 35px;
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 15%;
     padding-top: 0.8%;
+    padding-right: 3.6%;
   }
 
   #expertise {
@@ -483,4 +490,10 @@ form {
     font-size: 16px;
     line-height: 1.25em;
   }
+}
+
+@media screen and (max-width: 760px) {
+}
+
+@media screen and (max-width: 400px) {
 }
