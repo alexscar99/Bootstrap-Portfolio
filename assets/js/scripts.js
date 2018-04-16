@@ -1,6 +1,8 @@
 $(document).ready(function() {
   // LANDING PAGE TOP GREETING
-  $('.scroll-about-section').hide();
+  $('.scroll-section').hide();
+  $('#greeting-left').hide();
+  $('#greeting-right').hide();
 
   var greetingTop = "HI, I'M ALEX SCARLETT";
 
@@ -16,66 +18,26 @@ $(document).ready(function() {
     greetingTopArray[counterTop]
       .appendTo(greetingLocationTop)
       .hide()
-      .fadeIn(70);
+      .fadeIn(100);
     counterTop += 1;
 
     if (counterTop === greetingTopArray.length) {
       clearInterval(i);
-      var greetingBottomLeft = 'FULL STACK WEB DEVELOPER';
-
-      var greetingBottomLeftArray = jQuery.map(
-        greetingBottomLeft.split(''),
-        function(letter) {
-          return $('<span>' + letter + '</span>');
-        }
-      );
-
-      var greetingBottomLeftLocation = $('#greeting-bottom-left');
-
-      // counter and interval to populate each letter
-      var counterBottomLeft = 0;
-      var x = setInterval(function() {
-        greetingBottomLeftArray[counterBottomLeft]
-          .appendTo(greetingBottomLeftLocation)
-          .hide()
-          .fadeIn(70);
-        counterBottomLeft += 1;
-
-        if (counterBottomLeft === greetingBottomLeftArray.length) {
-          clearInterval(x);
-          var greetingBottomRight = "LET'S BUILD YOUR NEXT PROJECT";
-
-          var greetingBottomRightArray = jQuery.map(
-            greetingBottomRight.split(''),
-            function(letter) {
-              return $('<span>' + letter + '</span>');
-            }
-          );
-
-          var greetingBottomRightLocation = $('#greeting-bottom-right');
-
-          // counter and interval to populate each letter
-          var counterBottomRight = 0;
-          var y = setInterval(function() {
-            greetingBottomRightArray[counterBottomRight]
-              .appendTo(greetingBottomRightLocation)
-              .hide()
-              .fadeIn(70);
-            counterBottomRight += 1;
-
-            if (counterBottomRight === greetingBottomRightArray.length) {
-              clearInterval(y);
-              $('.scroll-about-section').fadeIn(1500);
-            }
-          }, 70);
-        }
-      }, 70);
+      $('#greeting-left')
+        .delay(500)
+        .fadeIn(800);
+      $('#greeting-right')
+        .delay(1500)
+        .fadeIn(800);
+      $('.scroll-section')
+        .delay(2500)
+        .fadeIn(800);
     }
-  }, 70);
+  }, 100);
 
   // SCROLL TO STACK
 
-  $('.scroll-about .scroll-about-section').click(function() {
+  $('.scroll-stack .scroll-section').click(function() {
     $('html, body').animate(
       {
         scrollTop: $('#stack-full').offset().top
@@ -84,7 +46,7 @@ $(document).ready(function() {
     );
   });
 
-  // PORTFOLIO
+  // PORTFOLIO HOVER
 
   $('.project-img-text-one h2').mouseover(function() {
     $('.project-one-p').fadeTo(800, 1);
