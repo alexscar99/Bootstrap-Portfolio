@@ -18,22 +18,22 @@ $(document).ready(function() {
     greetingTopArray[counterTop]
       .appendTo(greetingLocationTop)
       .hide()
-      .fadeIn(100);
+      .fadeIn(75);
     counterTop += 1;
 
     if (counterTop === greetingTopArray.length) {
       clearInterval(i);
       $('#greeting-left')
         .delay(500)
-        .fadeIn(800);
+        .show(600);
       $('#greeting-right')
-        .delay(1500)
-        .fadeIn(800);
+        .delay(500)
+        .show(600);
       $('.scroll-section')
-        .delay(2500)
+        .delay(1200)
         .fadeIn(800);
     }
-  }, 100);
+  }, 75);
 
   // SCROLL TO STACK
 
@@ -49,51 +49,51 @@ $(document).ready(function() {
   // PORTFOLIO HOVER
 
   $('.project-img-text-one h2').mouseover(function() {
-    $('.project-one-p').fadeTo(800, 1);
+    $('.project-one-p').fadeTo(1000, 1);
   });
 
   $('.project-img-text-one h2').mouseout(function() {
-    $('.project-one-p').fadeTo(500, 0.06);
+    $('.project-one-p').fadeTo(700, 0);
   });
 
   $('.project-img-text-two h2').mouseover(function() {
-    $('.project-two-p').fadeTo(800, 1);
+    $('.project-two-p').fadeTo(1000, 1);
   });
 
   $('.project-img-text-two h2').mouseout(function() {
-    $('.project-two-p').fadeTo(500, 0.06);
+    $('.project-two-p').fadeTo(700, 0);
   });
 
   $('.project-img-text-three h2').mouseover(function() {
-    $('.project-three-p').fadeTo(800, 1);
+    $('.project-three-p').fadeTo(1000, 1);
   });
 
   $('.project-img-text-three h2').mouseout(function() {
-    $('.project-three-p').fadeTo(500, 0.06);
+    $('.project-three-p').fadeTo(700, 0);
   });
 
   $('.project-img-text-four h2').mouseover(function() {
-    $('.project-four-p').fadeTo(800, 1);
+    $('.project-four-p').fadeTo(1000, 1);
   });
 
   $('.project-img-text-four h2').mouseout(function() {
-    $('.project-four-p').fadeTo(500, 0.06);
+    $('.project-four-p').fadeTo(700, 0);
   });
 
   $('.project-img-text-five h2').mouseover(function() {
-    $('.project-five-p').fadeTo(800, 1);
+    $('.project-five-p').fadeTo(1000, 1);
   });
 
   $('.project-img-text-five h2').mouseout(function() {
-    $('.project-five-p').fadeTo(500, 0.06);
+    $('.project-five-p').fadeTo(700, 0);
   });
 
   $('.project-img-text-six h2').mouseover(function() {
-    $('.project-six-p').fadeTo(800, 1);
+    $('.project-six-p').fadeTo(1000, 1);
   });
 
   $('.project-img-text-six h2').mouseout(function() {
-    $('.project-six-p').fadeTo(500, 0.06);
+    $('.project-six-p').fadeTo(700, 0);
   });
 
   // CONTACT FORM
