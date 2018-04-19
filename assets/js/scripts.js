@@ -137,7 +137,7 @@ $(document).ready(function() {
 
         $('.form-textarea').animate({ borderWidth: '1px' }, 500);
 
-        $('#contact-content form .submit-btn').css('margin-top', '6%');
+        $('#contact-content form .submit-btn').css('margin-top', '7%');
 
         $('.form-textarea').focus();
       }
