@@ -228,10 +228,10 @@ form {
 .project-first-row h2,
 .project-img-text h2 {
   text-decoration: none;
-  padding: 16% 0;
+  padding: 18% 0;
   margin: 0 auto;
   display: block;
-  font-size: 42px;
+  font-size: 35px;
 }
 
 .project-first-row:focus,
