@@ -1,8 +1,10 @@
 $(document).ready(function() {
   // LANDING PAGE GREETING
-  $('#greeting-bottom, #greeting-middle, .scroll-section').hide();
+  $(
+    '#greeting-bottom, #greeting-middle, #greeting-first, .scroll-section, .greeting-hr'
+  ).hide();
 
-  var greetingTop = "Hi, I'm Alex Scarlett.";
+  var greetingTop = "Hi, I'm Alex Scarlett";
 
   var greetingArray = jQuery.map(greetingTop.split(''), function(letter) {
     return $('<span>' + letter + '</span>');
@@ -20,16 +22,22 @@ $(document).ready(function() {
     counter++;
 
     if (counter === greetingArray.length) {
+      $('.greeting-hr')
+        .delay(300)
+        .fadeIn(300);
       clearInterval(i);
+      $('#greeting-first')
+        .delay(1000)
+        .fadeIn(500);
       $('#greeting-middle')
-        .delay(500)
-        .fadeIn(750);
-      $('#greeting-bottom')
         .delay(2000)
-        .fadeIn(750);
-      $('.scroll-section')
+        .fadeIn(500);
+      $('#greeting-bottom')
         .delay(3000)
-        .fadeIn(750);
+        .fadeIn(500);
+      $('.scroll-section')
+        .delay(4000)
+        .fadeIn(500);
     }
   }, 80);
 

@@ -86,6 +86,7 @@ a:focus {
   margin-top: 3%;
   display: block;
   border-bottom: 3px solid #65b0df;
+  border-top: none;
   padding: 0;
 }
 
@@ -103,7 +104,7 @@ a:focus {
 
 .dev-text h3,
 .design-text h3,
-.mobile-text h3 {
+.search-text h3 {
   margin-top: 30px;
   font-size: 27px;
 }
@@ -118,7 +119,7 @@ a:focus {
 .contact-hr {
   display: block;
   margin: 10px auto;
-  width: 20%;
+  width: 14%;
   height: 8px;
   border-top: 3px solid #333;
   border-bottom: 3px solid #333;
@@ -127,7 +128,7 @@ a:focus {
 
 .expertise-dev,
 .expertise-design,
-.expertise-mobile {
+.expertise-search {
   font-size: 2.25rem;
   border-radius: 50%;
   height: 10.5rem;
@@ -140,7 +141,7 @@ a:focus {
 
 .dev-icon,
 .design-icon,
-.mobile-icon {
+.search-icon {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -156,14 +157,14 @@ a:focus {
   padding-top: 12px;
 }
 
-.mobile-icon {
+.search-icon {
   font-size: 1.75em;
   padding-top: 10px;
 }
 
 .dev-text,
 .design-text,
-.mobile-text {
+.search-text {
   margin: 0 auto;
   display: block;
   width: 50%;
@@ -180,7 +181,7 @@ a:focus {
 }
 
 #homepage-full {
-  background: url('../imgs/railroad-black-and-white.jpg');
+  background: url('../imgs/bridge-black-and-white.jpg');
   width: 100vw;
   height: 100vh;
   background-attachment: fixed;
@@ -195,7 +196,7 @@ a:focus {
 .homepage-layer {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .homepage-content {
@@ -204,9 +205,9 @@ a:focus {
 
 #greeting-top,
 #greeting-bottom,
-#greeting-middle {
+#greeting-middle,
+#greeting-first {
   line-height: 70px;
-  color: white;
   font-weight: bolder;
 }
 
@@ -218,17 +219,30 @@ a:focus {
 }
 
 #greeting-middle,
-#greeting-bottom {
-  padding-top: 9%;
+#greeting-bottom,
+#greeting-first {
+  padding-top: 4%;
   text-align: center;
-  color: black;
+  color: #bbbaba;
   width: 60%;
   margin: 0 auto;
   display: block;
 }
 
-.greeting-bottom {
-  color: white;
+#greeting-first {
+  padding-top: 6%;
+}
+
+#greetin-bottom,
+#greeting-middle {
+  padding-top: 3%;
+}
+
+.greeting-hr {
+  border-top: 1px solid white;
+  width: 65%;
+  margin: 10px auto;
+  display: block;
 }
 
 .scroll-section {
@@ -333,7 +347,7 @@ a:focus {
 }
 
 .portfolio-last-row {
-  padding-bottom: 4%;
+  padding-bottom: 2%;
 }
 
 .portfolio-paragraph {
@@ -466,7 +480,7 @@ a:focus {
   color: #2db348;
   width: 45.7%;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #contact-content .form-p {
@@ -477,11 +491,11 @@ a:focus {
   width: 80%;
   height: 120px;
   color: #2db348;
-  border: 0px solid #2db348;
+  border: 0px solid black;
   margin: 0 auto;
   text-align: center;
   padding: 15px;
-  font-size: 18px;
+  font-size: 20px;
   resize: none;
 }
 
@@ -500,13 +514,14 @@ form {
 }
 
 #about-me p {
-  font-size: 21px;
-  padding-bottom: 3%;
+  font-size: 22px;
+  padding: 5% 0;
   line-height: 1.4em;
+  font-weight: normal;
 }
 
 #about-me .about-first-p {
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 .social {
