@@ -1,8 +1,8 @@
 $(document).ready(function() {
   // LANDING PAGE GREETING
-  $('#greeting-bottom, .scroll-section').hide();
+  $('#greeting-bottom, #greeting-middle, .scroll-section').hide();
 
-  var greetingTop = "HI, I'M ALEX SCARLETT.";
+  var greetingTop = "Hi, I'm Alex Scarlett.";
 
   var greetingArray = jQuery.map(greetingTop.split(''), function(letter) {
     return $('<span>' + letter + '</span>');
@@ -16,16 +16,22 @@ $(document).ready(function() {
     greetingArray[counter]
       .appendTo(greetingLocation)
       .hide()
-      .fadeIn(75);
+      .fadeIn(80);
     counter++;
 
     if (counter === greetingArray.length) {
       clearInterval(i);
-      $('#greeting-bottom, .scroll-section')
-        .delay(500)
+      $('#greeting-middle')
+        .delay(1000)
+        .fadeIn(1000);
+      $('#greeting-bottom')
+        .delay(2000)
         .fadeIn(1500);
+      $('.scroll-section')
+        .delay(3000)
+        .fadeIn(2000);
     }
-  }, 75);
+  }, 80);
 
   // SCROLL TO STACK
 

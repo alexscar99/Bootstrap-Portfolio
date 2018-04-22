@@ -33,8 +33,17 @@ p {
   font-size: 22px;
 }
 
-form {
-  margin-left: -4%;
+a {
+  color: #d11e1e;
+  outline: none;
+}
+
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: #d11e1e;
+  border-bottom: none;
 }
 
 #homepage-full,
@@ -44,26 +53,75 @@ form {
   text-align: center;
 }
 
-.expertise-divider {
-  height: 47vh;
+.expertise-divider,
+.projects-divider,
+.contact-divider {
   width: 100vw;
+  color: #333;
+  height: 20vh;
+}
+
+.contact-divider {
+  background: #33d353;
+}
+
+.expertise-divider {
   background: #65b0df;
-  color: black;
 }
 
-.expertise-header h2 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-top: 30px;
-}
-
-.expertise-hr {
+.expertise-services {
+  width: 24%;
+  margin: 3% 3.3%;
   display: block;
-  margin: 20px auto;
-  width: 17%;
-  height: 7px;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  padding-top: 2.5%;
+}
+
+.services-row {
+  margin: 0 auto;
+  display: block;
+}
+
+.stack-hr {
+  width: 100%;
+  margin-top: 3%;
+  display: block;
+  border-bottom: 3px solid #65b0df;
+  padding: 0;
+}
+
+.projects-divider {
+  background: #f12c2c;
+}
+
+.expertise-header h2,
+.projects-header h2,
+.contact-header h2 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 3.2em;
+}
+
+.dev-text h3,
+.design-text h3,
+.mobile-text h3 {
+  margin-top: 30px;
+  font-size: 27px;
+}
+
+.dev-text h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.expertise-hr,
+.projects-hr,
+.contact-hr {
+  display: block;
+  margin: 10px auto;
+  width: 20%;
+  height: 8px;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
   text-align: center;
 }
 
@@ -71,32 +129,50 @@ form {
 .expertise-design,
 .expertise-mobile {
   font-size: 2.25rem;
-  border-radius: 50% !important;
-  height: 10rem;
-  width: 10rem;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 10.5rem;
+  width: 10.5rem;
+  box-shadow: 1px 1px 1.5px 1.5px #555;
   background: white;
   display: block;
-  margin: 35px auto;
+  margin: 60px auto 0 auto;
 }
 
 .dev-icon,
 .design-icon,
 .mobile-icon {
-  font-size: 1.6em;
   display: block;
-  padding-top: 14px;
   margin: 0 auto;
   width: 100%;
+}
+
+.dev-icon {
+  font-size: 1.7em;
+  padding-top: 14px;
+}
+
+.design-icon {
+  font-size: 1.7em;
+  padding-top: 12px;
+}
+
+.mobile-icon {
+  font-size: 1.75em;
+  padding-top: 10px;
 }
 
 .dev-text,
 .design-text,
 .mobile-text {
-  margin: 40px auto;
+  margin: 0 auto;
   display: block;
   width: 50%;
   text-align: center;
+}
+
+.dev-text {
+  margin-right: 0;
+  width: 100%;
 }
 
 .expertise-dev h3 {
@@ -104,8 +180,8 @@ form {
 }
 
 #homepage-full {
-  background: url('../imgs/programmer-wp.png');
-  width: 100%;
+  background: url('../imgs/railroad-black-and-white.jpg');
+  width: 100vw;
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -116,38 +192,55 @@ form {
   -o-background-size: cover;
 }
 
+.homepage-layer {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .homepage-content {
   text-align: center;
 }
 
 #greeting-top,
 #greeting-bottom,
-.skills-p {
+#greeting-middle {
   line-height: 70px;
   color: white;
   font-weight: bolder;
 }
 
 #greeting-top {
-  font-size: 60px;
-  margin-top: 0;
-  padding: 5% 0 12% 3%;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  padding-top: 7%;
 }
 
+#greeting-middle,
 #greeting-bottom {
-  margin: 20% auto 1.3% auto;
+  padding-top: 9%;
+  text-align: center;
+  color: black;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+
+.greeting-bottom {
+  color: white;
 }
 
 .scroll-section {
-  margin: 0 10px 0 0;
+  margin: 10% 10px 0 0;
   display: inline-block;
   height: 40px;
   width: 40px;
-  border: 2px solid white;
-  border-radius: 100% !important;
+  border: 2px solid #dbdbdb;
+  border-radius: 100%;
   padding: 0.5%;
-  padding-top: 0.4%;
-  color: white;
+  padding-top: 0.6%;
+  color: #dbdbdb;
   font-size: 22px;
 }
 
@@ -157,10 +250,6 @@ form {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-#expertise-full {
-  height: 85vh;
-}
-
 #about-me,
 #expertise {
   position: relative;
@@ -168,10 +257,20 @@ form {
 }
 
 #expertise {
-  padding-top: 3%;
+  padding-top: 5%;
 }
 
-.expertise-content {
+#expertise-full .vertical-line {
+  height: 40vh;
+  margin: 5% 1.75% 6% 1.75%;
+  width: 6px;
+  padding: 0;
+  border-left: 1px solid #65b0df;
+  border-right: 1px solid #65b0df;
+}
+
+#expertise-full .container {
+  padding: 0;
 }
 
 #expertise h2 {
@@ -179,6 +278,10 @@ form {
   padding-bottom: 1%;
   border-bottom: 3px solid;
   display: inline;
+}
+
+.expertise-content {
+  margin-bottom: 5%;
 }
 
 .expertise-svg,
@@ -210,18 +313,16 @@ form {
 }
 
 .expertise-container {
-  background: #f5f5f5;
   margin: 2%;
   width: 21%;
-  box-shadow: 3px 2px 10px 1px #bcbcbc;
+  box-shadow: 1px 1px 2px 2px #1c6a9b;
 }
 
 #portfolio {
   text-align: center;
   margin: auto;
   width: 100%;
-  padding-top: 3%;
-  background: #fafafa;
+  padding-top: 6%;
 }
 
 #portfolio h3 {
@@ -229,10 +330,6 @@ form {
   color: #f12c2c;
   font-size: 26px;
   margin-top: 0;
-}
-
-.row-container {
-  padding-top: 4%;
 }
 
 .portfolio-last-row {
@@ -248,15 +345,6 @@ form {
   font-size: 18px;
   line-height: 1.4em;
   font-weight: normal;
-  padding-top: 3%;
-}
-
-.portfolio-heading h2 {
-  font-size: 42px;
-  padding-bottom: 1%;
-  border-bottom: 3px solid;
-  display: inline;
-  margin: 0 auto;
 }
 
 .project-first-row,
@@ -264,42 +352,43 @@ form {
   position: relative;
   color: #d11e1e;
   background: white;
-  height: 20vh;
+  height: 18vh;
   width: 100%;
   text-decoration: none;
-  margin: 10% auto;
+  margin: 5% auto;
   border: 2px solid #d11e1e;
-}
-
-.project-first-row h2 {
-  margin: 30% auto;
+  margin-top: 0;
 }
 
 .project-first-row h2,
 .project-img-text h2 {
   text-decoration: none;
-  padding: 18% 0;
+  padding: 15% 0;
   margin: 0 auto;
   display: block;
-  font-size: 35px;
+  font-size: 36px;
+  outline: none;
+  margin-top: 0;
 }
 
 .project-first-row:focus,
 .project-first-row:hover,
 .project-first-row:active,
+.project-first-row:visited,
+.project-img-text:visited,
 .project-img-text:active,
 .project-img-text:hover,
-.project-img-text:focus,
-#contact-content .submit-btn:hover {
+.project-img-text:focus {
   background: #bc1212;
   color: white;
   border: 3px solid #bc1212;
   transition: 0.8s;
+  outline: 0;
 }
 
 #contact-content .submit-btn:hover {
-  background: #bc1212;
-  border: 2px solid #bc1212;
+  background: #2db348;
+  border: 2px solid #2db348;
   color: white;
   transition: 0.8s;
 }
@@ -312,41 +401,42 @@ form {
 #contact {
   position: relative;
   background: white;
-  padding-top: 3%;
+  padding-top: 4%;
   padding-left: 1.3%;
   height: 100vh;
 }
 
 #contact-content {
   width: 85%;
-  height: 90vh;
-  padding: 35px 45px;
+  height: 100vh;
+  padding: 20px 0;
   position: relative;
-  margin: 0 auto;
+  margin: 0 110px 0 auto;
   text-align: center;
   color: black;
   font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 #contact-content h2,
 #about-me h2 {
-  color: #d11e1e;
+  color: #2db348;
   margin: 2% 0;
   padding-bottom: 2%;
-  border-bottom: 3px solid #d11e1e;
+  border-bottom: 3px solid #2db348;
   font-size: 45px;
   display: inline;
 }
 
 #contact-content form {
-  padding-left: 0;
+  padding-right: 0;
+  margin-left: 20px;
 }
 
 #contact-content .vertical-line {
-  border-left: 1px solid black;
-  height: 80vh;
-  margin-left: 3%;
+  height: 90vh;
+  border-left: 3px solid #2db348;
+  width: 1px;
+  padding-left: 2%;
 }
 
 #contact-content .about-content p {
@@ -359,21 +449,21 @@ form {
 }
 
 #contact-content .submit-btn {
-  padding: 2.5%;
+  padding: 1.5% 1% 1% 1%;
   margin: 20% auto;
   display: block;
-  border: 2px solid #d11e1e;
+  border: 2px solid #2db348;
   background: transparent;
-  color: #d11e1e;
+  color: #2db348;
   border-radius: 50px;
   width: 50%;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 #contact-content input {
   border-bottom: 1px solid black;
-  color: #d11e1e;
+  color: #2db348;
   width: 45.7%;
   text-align: center;
   font-size: 18px;
@@ -386,8 +476,8 @@ form {
 .form-textarea {
   width: 80%;
   height: 120px;
-  color: #d11e1e;
-  border: 0px solid black;
+  color: #2db348;
+  border: 0px solid #2db348;
   margin: 0 auto;
   text-align: center;
   padding: 15px;
@@ -400,14 +490,23 @@ form {
   opacity: 0.5;
 }
 
+#about-me {
+  margin-left: 20px;
+}
+
+#about-me,
+form {
+  padding-top: 45px;
+}
+
 #about-me p {
-  font-size: 18px;
+  font-size: 21px;
   padding-bottom: 3%;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
 #about-me .about-first-p {
-  padding-top: 15%;
+  padding-top: 20%;
 }
 
 .social {
@@ -449,6 +548,7 @@ form {
   height: 70px;
   width: 100%;
   margin-bottom: -1%;
+  margin-top: 55px;
 }
 
 .copyright {
