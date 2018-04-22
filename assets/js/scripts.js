@@ -28,16 +28,13 @@ $(document).ready(function() {
       clearInterval(i);
       $('#greeting-first')
         .delay(1000)
-        .fadeIn(500);
+        .show(1000);
       $('#greeting-middle')
         .delay(2000)
-        .fadeIn(500);
-      $('#greeting-bottom')
-        .delay(3000)
-        .fadeIn(500);
-      $('.scroll-section')
-        .delay(4000)
-        .fadeIn(500);
+        .show(1000);
+      $('#greeting-bottom, .scroll-section')
+        .delay(3500)
+        .fadeIn(1000);
     }
   }, 80);
 

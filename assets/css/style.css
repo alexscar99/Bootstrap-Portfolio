@@ -237,7 +237,8 @@ a:focus {
 }
 
 #greeting-bottom {
-  padding-top: 3%;
+  padding-top: 14%;
+  font-size: 27px;
 }
 
 .greeting-hr {
@@ -248,14 +249,13 @@ a:focus {
 }
 
 .scroll-section {
-  margin-top: 12%;
+  margin-top: 1%;
   display: inline-block;
   height: 40px;
   width: 40px;
   border: 2px solid #bbbaba;
   border-radius: 100%;
   padding: 0.5%;
-  padding-top: 0.55%;
   color: #dbdbdb;
   font-size: 22px;
 }
