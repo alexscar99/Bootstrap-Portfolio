@@ -22,14 +22,14 @@ $(document).ready(function() {
     if (counter === greetingArray.length) {
       clearInterval(i);
       $('#greeting-middle')
-        .delay(1000)
-        .fadeIn(1000);
+        .delay(500)
+        .fadeIn(750);
       $('#greeting-bottom')
         .delay(2000)
-        .fadeIn(1500);
+        .fadeIn(750);
       $('.scroll-section')
         .delay(3000)
-        .fadeIn(2000);
+        .fadeIn(750);
     }
   }, 80);
 
