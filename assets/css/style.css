@@ -98,7 +98,7 @@ a:focus {
 .projects-header h2,
 .contact-header h2 {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 17px;
   font-size: 3em;
 }
 
@@ -232,8 +232,11 @@ a:focus {
   padding-top: 6%;
 }
 
-#greeting-bottom,
 #greeting-middle {
+  padding-top: 2%;
+}
+
+#greeting-bottom {
   padding-top: 3%;
 }
 
@@ -245,7 +248,7 @@ a:focus {
 }
 
 .scroll-section {
-  margin-top: 9%;
+  margin-top: 15%;
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -446,7 +449,7 @@ a:focus {
 }
 
 #contact-content .vertical-line {
-  height: 90vh;
+  height: 85vh;
   border-left: 3px solid #2db348;
   width: 1px;
   padding-left: 2%;
@@ -509,7 +512,7 @@ a:focus {
 
 #about-me,
 form {
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 #about-me p {
