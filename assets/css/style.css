@@ -38,11 +38,69 @@ form {
 }
 
 #homepage-full,
-#stack-full,
+#expertise-full,
 #contact-full {
   position: relative;
   text-align: center;
-  font-weight: bold;
+}
+
+.expertise-divider {
+  height: 60vh;
+  width: 100vw;
+  background: #65b0df;
+  color: black;
+}
+
+.expertise-header h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 30px;
+}
+
+.expertise-hr {
+  display: block;
+  margin: 20px auto;
+  width: 17%;
+  height: 7px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+.expertise-dev,
+.expertise-design,
+.expertise-mobile {
+  font-size: 2.25rem;
+  border-radius: 50% !important;
+  height: 10rem;
+  width: 10rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  display: block;
+  margin: 50px auto;
+}
+
+.dev-icon,
+.design-icon,
+.mobile-icon {
+  font-size: 1.6em;
+  display: block;
+  padding-top: 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dev-text,
+.design-text,
+.mobile-text {
+  margin: 40px auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.expertise-dev h3 {
+  text-align: center;
 }
 
 #homepage-full {
@@ -63,8 +121,8 @@ form {
 }
 
 #greeting-top,
-#greeting-left,
-#greeting-right {
+#greeting-bottom,
+.skills-p {
   line-height: 70px;
   color: white;
   font-weight: bolder;
@@ -76,26 +134,19 @@ form {
   padding: 5% 0 12% 3%;
 }
 
-#greeting-left,
-#greeting-right {
-  font-size: 30px;
-}
-
-#greeting-right {
-  float: right;
-  padding-right: 3%;
+#greeting-bottom {
+  margin: 20% auto 1.3% auto;
 }
 
 .scroll-section {
-  margin: 13% auto;
-  display: block;
+  margin: 0 10px 0 0;
+  display: inline-block;
   height: 40px;
   width: 40px;
   border: 2px solid white;
   border-radius: 100% !important;
   padding: 0.5%;
-  padding-top: 0.45%;
-  padding-right: 0.55%;
+  padding-top: 0.4%;
   color: white;
   font-size: 22px;
 }
@@ -106,8 +157,8 @@ form {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-#stack-full {
-  height: 100vh;
+#expertise-full {
+  height: 85vh;
 }
 
 #about-me,
@@ -117,11 +168,10 @@ form {
 }
 
 #expertise {
-  padding: 3%;
+  padding-top: 3%;
 }
 
 .expertise-content {
-  margin-top: 6%;
 }
 
 #expertise h2 {

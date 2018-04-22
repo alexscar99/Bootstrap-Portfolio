@@ -1,37 +1,29 @@
 $(document).ready(function() {
-  // LANDING PAGE TOP GREETING
-  $('.scroll-section').hide();
-  $('#greeting-left').hide();
-  $('#greeting-right').hide();
+  // LANDING PAGE GREETING
+  $('#greeting-bottom, .scroll-section').hide();
 
-  var greetingTop = "HI, I'M ALEX SCARLETT";
+  var greetingTop = "HI, I'M ALEX SCARLETT.";
 
-  var greetingTopArray = jQuery.map(greetingTop.split(''), function(letter) {
+  var greetingArray = jQuery.map(greetingTop.split(''), function(letter) {
     return $('<span>' + letter + '</span>');
   });
 
-  var greetingLocationTop = $('#greeting-top');
+  var greetingLocation = $('#greeting-top');
 
   // counter and interval to populate each letter
-  var counterTop = 0;
+  var counter = 0;
   var i = setInterval(function() {
-    greetingTopArray[counterTop]
-      .appendTo(greetingLocationTop)
+    greetingArray[counter]
+      .appendTo(greetingLocation)
       .hide()
       .fadeIn(75);
-    counterTop += 1;
+    counter++;
 
-    if (counterTop === greetingTopArray.length) {
+    if (counter === greetingArray.length) {
       clearInterval(i);
-      $('#greeting-left')
+      $('#greeting-bottom, .scroll-section')
         .delay(500)
-        .show(600);
-      $('#greeting-right')
-        .delay(500)
-        .show(600);
-      $('.scroll-section')
-        .delay(1200)
-        .fadeIn(800);
+        .fadeIn(1500);
     }
   }, 75);
 
@@ -40,7 +32,7 @@ $(document).ready(function() {
   $('.scroll-stack .scroll-section').click(function() {
     $('html, body').animate(
       {
-        scrollTop: $('#stack-full').offset().top
+        scrollTop: $('.expertise-divider').offset().top
       },
       750
     );
