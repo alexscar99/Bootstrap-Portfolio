@@ -26,14 +26,11 @@ $(document).ready(function() {
         .delay(300)
         .fadeIn(300);
       clearInterval(i);
-      $('#greeting-first')
+      $('#greeting-middle')
         .delay(1000)
         .show(1000);
-      $('#greeting-middle')
-        .delay(2000)
-        .show(1000);
       $('#greeting-bottom, .scroll-section')
-        .delay(3500)
+        .delay(2500)
         .fadeIn(1000);
     }
   }, 80);
