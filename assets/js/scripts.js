@@ -27,10 +27,10 @@ $(document).ready(function() {
         .fadeIn(300);
       clearInterval(i);
       $('#greeting-middle')
-        .delay(1000)
-        .show(1000);
+        .delay(800)
+        .fadeIn(1000);
       $('#greeting-bottom, .scroll-section')
-        .delay(2500)
+        .delay(1800)
         .fadeIn(1000);
     }
   }, 80);
