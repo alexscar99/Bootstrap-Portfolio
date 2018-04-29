@@ -46,6 +46,19 @@ $(document).ready(function() {
     );
   });
 
+  // Bouncing Images When Entering Viewport (work in progress)
+  // function topInViewport(element) {
+  //   return (
+  //     $(element).offset().top >= $(window).scrollTop() &&
+  //     $(element).offset().top <= $(window).scrollTop() + $(window).height()
+  //   );
+  // }
+
+  // $(window).on('load resize scroll', function(e) {
+  //   if (topInViewport($('#DIV'))) {
+  //     // add keyframes bounce to div
+  //   }
+  // });
   // PORTFOLIO HOVER
 
   $('.project-img-text-one h2').mouseover(function() {
