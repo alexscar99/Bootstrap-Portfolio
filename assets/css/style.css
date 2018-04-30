@@ -295,7 +295,14 @@ a:focus {
   margin-bottom: 5%;
 }
 
+.expertise-split {
+  padding: 0;
+}
+
 .expertise-svg,
+.apple-svg,
+.html-svg,
+.css-svg,
 .express-svg,
 .firebase-svg,
 .react-svg,
@@ -303,6 +310,17 @@ a:focus {
   margin: 3% auto;
   padding-top: 4%;
   height: 16vh;
+}
+
+.html-svg,
+.css-svg {
+  height: 14vh;
+  margin: 10% auto;
+}
+
+.apple-svg {
+  height: 12vh;
+  margin: 17% auto;
 }
 
 .react-svg {
