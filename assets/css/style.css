@@ -303,6 +303,7 @@ a:focus {
 .apple-svg,
 .html-svg,
 .css-svg,
+.js-svg,
 .express-svg,
 .firebase-svg,
 .react-svg,
@@ -318,14 +319,19 @@ a:focus {
   margin: 10% auto;
 }
 
+.js-svg {
+  height: 14vh;
+  margin: 6% auto;
+}
+
 .apple-svg {
   height: 12vh;
   margin: 17% auto;
 }
 
 .react-svg {
-  padding-top: 7%;
-  padding-bottom: 4%;
+  height: 13vh;
+  margin: 8% auto;
 }
 
 .express-svg {
